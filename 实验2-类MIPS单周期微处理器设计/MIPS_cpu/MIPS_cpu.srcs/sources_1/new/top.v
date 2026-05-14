@@ -38,7 +38,7 @@ module top(
     wire [31:0] memReadData;
     irom instMem(
         .clk(clk),
-        .addr(pAddr[6:0]),
+        .addr(pAddr[8:2]), // 指令地址按字对齐，因此使用pAddr的高7位作为地址输入
         .inst(instr)
     );
 
@@ -100,15 +100,15 @@ module top(
         .aluRes(aluRes),
         .zero(zero)
     );
-    wire [31:0] inData;
     Dram dataMem(
         .clk(clk),
         .memWriteEn(ctr_memWriteEn),
+        .memReadEn(ctr_memReadEn),
         .WriteData(RtData),
         .Addr(aluRes[7:2]),
-        .ReadData(inData)
+        .ReadData(memReadData)
     );
-    assign regWriteData = ctr_memToReg ? inData : aluRes; // lw指令从内存读取数据写回寄存器，其他指令写回ALU结果
+    assign regWriteData = ctr_memToReg ? memReadData : aluRes; // lw指令从内存读取数据写回寄存器，其他指令写回ALU结果
     // MUX_2to1 #(.WIDTH(32)) memToRegMux(
     //     .sel(ctr_memToReg),
     //     .in0(inData),

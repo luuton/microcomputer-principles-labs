@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2026/05/14 13:12:38
+// Create Date: 2026/05/14 20:15:39
 // Design Name: 
-// Module Name: tb_irom
+// Module Name: tb_top
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,31 +20,29 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_irom(
-    output [31:0] inst
+module tb_top(
+
     );
 
     reg clk;
-    reg [6:0] addr;
+    reg reset;
 
-    irom uut (
+    top top(
         .clk(clk),
-        .addr(addr),
-        .inst(inst)
+        .reset(reset)
     );
 
     parameter period = 10;
     always #(period/2) clk = ~clk;
 
+
     initial begin
         clk = 0;
-        addr = 0;
-        #20;
-        // 依次读取指令存储器中的前12条指令
-        repeat (12) begin
-            addr = addr + 1;
-            #20;
-        end
-        #20 $finish;
+        reset = 0;
+        
+        #10; // 等待一个时钟周期
+        reset = 1; // 释放复位信号，CPU开始工作
+        #200; $finish;
+        
     end
 endmodule

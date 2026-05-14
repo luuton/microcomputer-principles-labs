@@ -33,7 +33,10 @@ module ALU(
         case (aluCtr)
         // +
             4'b0001:
+            begin
                 aluRes = input1 + input2;
+                zero = 0;
+            end
         // -
             4'b0010:
             begin
@@ -46,15 +49,27 @@ module ALU(
             end
         // &
             4'b0011:
+            begin
                 aluRes = input1 & input2;
+                zero = 0;
+            end
         // |
             4'b0100:
+            begin
                 aluRes = input1 | input2;
+                zero = 0;
+            end
         // slt
             4'b0101:
+            begin
                 aluRes = (input1 < input2) ? 1 : 0;
+                zero = 0;
+            end
             default: 
+            begin
                 aluRes = 0;
+                zero = 0;
+            end
         endcase
     end
 endmodule
