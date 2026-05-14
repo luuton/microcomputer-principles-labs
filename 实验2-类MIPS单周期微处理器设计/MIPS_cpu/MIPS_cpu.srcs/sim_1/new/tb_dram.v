@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2026/05/07 20:19:44
+// Create Date: 2026/05/14 13:12:38
 // Design Name: 
-// Module Name: irom
+// Module Name: tb_dram
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,19 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module irom(
-    input clk,
-    input [6:0] addr,
-    output reg [31:0] inst
-    );
+module tb_dram(
 
-    reg [31:0] instMem [0:31];
-    always @(posedge clk) begin
-        inst = instMem[addr];
-    end
-    
-    //assign inst = instMem[addr];
-    initial begin
-        $readmemh("test.txt", instMem, 0, 11);// 预加载指令到指令存储器, 0-11行共12条指令
-    end
+    );
 endmodule

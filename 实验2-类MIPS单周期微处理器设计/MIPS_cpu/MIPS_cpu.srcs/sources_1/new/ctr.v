@@ -30,19 +30,22 @@ module ctr(
     output reg memWriteEn,
     output reg [3:0] aluCtr,
     output reg branch,
-    output reg jump
+    output reg jump,
+    output [11:0] ctr_varl  //for debug
     );
     wire [5:0] opCode, funct;
-    wire [11:0] ctr_varl;
+    //wire [11:0] ctr_varl;
 
-    assign opCode = instr[31:26];
     assign funct = instr[5:0];
-    assign ctr_varl = {opCode, funct};
+    assign opCode = instr[31:26];
+    assign ctr_varl = {opCode, funct}; 
     
     always @(ctr_varl) begin
-        case (ctr_varl)
+        // casex (ctr_varl)
+        //     12'b000000_xxxxxx: // R-type
+        case (opCode)
         // R-type÷∏¡Ó
-            12'b000000_xxxxxx: 
+            6'b000000: 
             begin
                 regDst = 1;
                 aluSrc = 0;
@@ -53,22 +56,22 @@ module ctr(
                 branch = 0;
                 jump = 0;
                 case (funct)
-                    100000:
+                    6'b100000:
                         aluCtr = 4'b0001; // add
-                    100010:
+                    6'b100010:
                         aluCtr = 4'b0010; // sub
-                    100100:
+                    6'b100100:
                         aluCtr = 4'b0011; // and
-                    100101:
+                    6'b100101:
                         aluCtr = 4'b0100; // or
-                    101010:
+                    6'b101010:
                         aluCtr = 4'b0101; // slt
                     default: 
                         aluCtr = 4'b0000; 
                 endcase
             end
         // J-type÷∏¡Ó
-            12'b000010_xxxxxx: // j
+            6'b000010: // j
             begin
                 regDst = 1'bx; 
                 aluSrc = 1'bx; 
@@ -81,7 +84,7 @@ module ctr(
                 jump = 1;
             end
         // I-type÷∏¡Ó
-            12'b100011_xxxxxx: // lw
+            6'b100011: // lw
             begin
                 regDst = 0;
                 aluSrc = 1;
@@ -93,7 +96,7 @@ module ctr(
                 branch = 0;
                 jump = 0;
             end
-            12'b101011_xxxxxx: // sw
+            6'b101011: // sw
             begin
                 regDst = 1'bx;
                 aluSrc = 1;
@@ -105,7 +108,7 @@ module ctr(
                 branch = 0;
                 jump = 0;
             end
-            12'b000100_xxxxxx: // beq
+            6'b000100: // beq
             begin
                 regDst = 1'bx;
                 aluSrc = 0;
@@ -117,7 +120,7 @@ module ctr(
                 branch = 1;
                 jump = 0;
             end
-            12'b001000_xxxxxx: // addi
+            6'b001000: // addi
             begin
                 regDst = 0;
                 aluSrc = 1;
@@ -129,7 +132,7 @@ module ctr(
                 branch = 0;
                 jump = 0;
             end
-            12'b001101_xxxxxx: // ori
+            6'b001101: // ori
             begin
                 regDst = 0;
                 aluSrc = 1;

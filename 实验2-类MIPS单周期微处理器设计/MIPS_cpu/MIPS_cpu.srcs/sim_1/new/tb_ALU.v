@@ -52,6 +52,7 @@ module tb_ALU(
         input1 = 32'h0000_0003;
         input2 = 32'h0000_0005;
         aluCtr = 4'b0010; 
+        #20 $finish;
 
     end
 

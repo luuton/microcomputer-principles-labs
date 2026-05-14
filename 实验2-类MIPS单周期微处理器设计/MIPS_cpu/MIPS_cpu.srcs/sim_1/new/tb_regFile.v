@@ -65,6 +65,7 @@ module tb_regFile(
         regWriteEn = 0;
         RsAddr = 5'h02;
         RtAddr = 5'h02;
+        #20 $finish;
     end
 
 endmodule
