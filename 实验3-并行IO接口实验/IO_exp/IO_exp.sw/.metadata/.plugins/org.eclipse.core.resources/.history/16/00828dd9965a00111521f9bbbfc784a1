@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include "xgpio.h"
+
+int main() {
+    Xil_Out16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_TRI_OFFSET, 0xffff);   //配置GPIO0 ch1(开关)为输入
+    Xil_Out16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_TRI2_OFFSET, 0x0000);  //配置GPIO0 ch2(LED)为输出
+    Xil_Out16(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_TRI_OFFSET, 0x0);  //配置GPIO1 ch1数码管段选信号为输出
+    Xil_Out16(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_TRI2_OFFSET, 0x0);  //配置GPIO1 ch2数码管位选信号为输出
+
+    char segcode[5] = {0x4f,0x3e,0x38,0x7c,0x6f};   //c,u,l,d,r
+    short pos = 0xff7f;  //数码管位选信号
+    while(1) {
+        u16 sw = Xil_In16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA_OFFSET);  //读取开关状态
+        Xil_Out16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA2_OFFSET, sw);   //将开关状态输出到LED
+        for(int i=0; i<8; i++) {
+            Xil_Out16(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_DATA2_OFFSET, segcode[0]);  //根据开关状态输出数码管段选信号
+            Xil_Out16(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_DATA_OFFSET, pos);  //输出数码管位选信号
+            for(int j=0; j<10000; j++);  //延时
+            pos = pos >> 1;  //位选信号循环右移
+        }
+        pos = 0xff7f;  //重置位选信号
+    }
+}

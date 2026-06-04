@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="scw_hwspec" value="E:\XilinxProject\IO_exp"/>
+	<item key="fpga_elf_mem_selection" value="E:\XilinxProject\IO_exp\IO_exp.sw\demo\Debug"/>
+	<item key="scw_hwspec_file_selection" value="E:\XilinxProject\IO_exp"/>
+</section>

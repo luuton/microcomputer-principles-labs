@@ -1,0 +1,7 @@
+16:58:13 **** Clean-only build of configuration Debug for project intr ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  intr.elf.size  intr.elf
+' '
+
+16:58:13 Build Finished (took 267ms)
+

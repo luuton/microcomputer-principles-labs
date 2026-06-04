@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hello_system-imgFile" value=""/>
+	<item key="hello_system-offSet" value=""/>
+	<item key="hello_system-initFile" value=""/>
+	<item key="hello_system-flashType" value="28f00am29ew-bpi-x16"/>
+	<item key="hello_system-verifyFlash" value="false"/>
+	<item key="hello_system-blankCheck" value="false"/>
+	<item key="hello_system-device" value="Auto Detect"/>
+	<item key="hello_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="hello_system"/>
+</section>

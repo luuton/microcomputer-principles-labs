@@ -1,0 +1,1641 @@
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:23::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-06-04.15:23:23::SCWPlatform::Opened new HwDB with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2026-06-04.15:23:23::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io"
+		}]
+}
+TRACE::2026-06-04.15:23:23::SCWPlatform::Boot application domains not present, creating them
+TRACE::2026-06-04.15:23:23::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2026-06-04.15:23:23::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io"
+		}]
+}
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:23::SCWDomain::checking for install qemu data   : 
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:23::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:23::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:23::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-06-04.15:23:23::SCWMssOS::No sw design opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:23::SCWMssOS::mss does not exists at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:23::SCWMssOS::Creating sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:23::SCWMssOS::Adding the swdes entry, created swdb E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss with des name E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:23::SCWMssOS::updating the scw layer changes to swdes at   E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:23::SCWMssOS::Writing mss at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:23::SCWMssOS::Completed writing the mss file at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp
+TRACE::2026-06-04.15:23:23::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2026-06-04.15:23:23::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2026-06-04.15:23:23::SCWMssOS::Completed writing the mss file at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp
+TRACE::2026-06-04.15:23:23::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Adding the swdes entry, mss present, able to open swdb E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2026-06-04.15:23:24::SCWMssOS::Writing the mss file completed E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"3b93e98136e77df99dffbde699e2c7d6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-06-04.15:23:24::SCWPlatform::Started generating the artifacts platform mb_basic_io
+TRACE::2026-06-04.15:23:24::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-06-04.15:23:24::SCWPlatform::Started generating the artifacts for system configuration mb_basic_io
+LOG::2026-06-04.15:23:24::SCWSystem::Checking the domain standalone_domain
+LOG::2026-06-04.15:23:24::SCWSystem::Not a boot domain 
+LOG::2026-06-04.15:23:24::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2026-06-04.15:23:24::SCWDomain::Generating domain artifcats
+TRACE::2026-06-04.15:23:24::SCWMssOS::Generating standalone artifcats
+TRACE::2026-06-04.15:23:24::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Completed writing the mss file at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp
+TRACE::2026-06-04.15:23:24::SCWMssOS::Mss edits present, copying mssfile into export location E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-06-04.15:23:24::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-06-04.15:23:24::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2026-06-04.15:23:24::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-06-04.15:23:24::SCWMssOS::Copying to export directory.
+TRACE::2026-06-04.15:23:24::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-06-04.15:23:24::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-06-04.15:23:24::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2026-06-04.15:23:24::SCWSystem::Completed Processing the sysconfig mb_basic_io
+LOG::2026-06-04.15:23:24::SCWPlatform::Completed generating the artifacts for system configuration mb_basic_io
+TRACE::2026-06-04.15:23:24::SCWPlatform::Started preparing the platform 
+TRACE::2026-06-04.15:23:24::SCWSystem::Writing the bif file for system config mb_basic_io
+TRACE::2026-06-04.15:23:24::SCWSystem::dir created 
+TRACE::2026-06-04.15:23:24::SCWSystem::Writing the bif 
+TRACE::2026-06-04.15:23:24::SCWPlatform::Started writing the spfm file 
+TRACE::2026-06-04.15:23:24::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-06-04.15:23:24::SCWPlatform::Completed generating the platform
+TRACE::2026-06-04.15:23:24::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"3b93e98136e77df99dffbde699e2c7d6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-06-04.15:23:24::SCWPlatform::updated the xpfm file.
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"3b93e98136e77df99dffbde699e2c7d6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"3b93e98136e77df99dffbde699e2c7d6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-06-04.15:23:24::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.15:23:24::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2026-06-04.15:23:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:24::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:24::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"3b93e98136e77df99dffbde699e2c7d6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-06-04.15:23:24::SCWPlatform::Clearing the existing platform
+TRACE::2026-06-04.15:23:24::SCWSystem::Clearing the existing sysconfig
+TRACE::2026-06-04.15:23:24::SCWMssOS::Removing the swdes entry for  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:24::SCWSystem::Clearing the domains completed.
+TRACE::2026-06-04.15:23:24::SCWPlatform::Clearing the opened hw db.
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform location is E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Removing the HwDB with name E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:24::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:24::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-06-04.15:23:25::SCWPlatform::Opened new HwDB with name design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWReader::Active system found as  mb_basic_io
+TRACE::2026-06-04.15:23:25::SCWReader::Handling sysconfig mb_basic_io
+TRACE::2026-06-04.15:23:25::SCWDomain::checking for install qemu data   : 
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:25::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:25::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-06-04.15:23:25::SCWMssOS::No sw design opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:25::SCWMssOS::mss exists loading the mss file  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:25::SCWMssOS::Opened the sw design from mss  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:25::SCWMssOS::Adding the swdes entry E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2026-06-04.15:23:25::SCWMssOS::updating the scw layer about changes
+TRACE::2026-06-04.15:23:25::SCWMssOS::Opened the sw design.  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:25::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:25::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.15:23:25::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.15:23:25::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.15:23:25::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-06-04.15:23:25::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:23:25::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:23:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Opened existing hwdb design_1_wrapper_7
+TRACE::2026-06-04.15:23:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:23:25::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:25::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:23:25::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:23:25::SCWReader::No isolation master present  
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:26:21::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-06-04.15:26:21::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWReader::Active system found as  mb_basic_io
+TRACE::2026-06-04.15:26:21::SCWReader::Handling sysconfig mb_basic_io
+TRACE::2026-06-04.15:26:21::SCWDomain::checking for install qemu data   : 
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:26:21::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:26:21::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-06-04.15:26:21::SCWMssOS::No sw design opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:26:21::SCWMssOS::mss exists loading the mss file  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:26:21::SCWMssOS::Opened the sw design from mss  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:26:21::SCWMssOS::Adding the swdes entry E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2026-06-04.15:26:21::SCWMssOS::updating the scw layer about changes
+TRACE::2026-06-04.15:26:21::SCWMssOS::Opened the sw design.  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:26:21::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:26:21::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.15:26:21::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.15:26:21::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.15:26:21::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-06-04.15:26:21::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:26:21::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:26:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.15:26:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:26:21::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:26:21::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:26:21::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:26:21::SCWReader::No isolation master present  
+LOG::2026-06-04.15:28:21::SCWPlatform::Started generating the artifacts platform mb_basic_io
+TRACE::2026-06-04.15:28:21::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-06-04.15:28:21::SCWPlatform::Started generating the artifacts for system configuration mb_basic_io
+LOG::2026-06-04.15:28:21::SCWSystem::Checking the domain standalone_domain
+LOG::2026-06-04.15:28:21::SCWSystem::Not a boot domain 
+LOG::2026-06-04.15:28:21::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2026-06-04.15:28:21::SCWDomain::Generating domain artifcats
+TRACE::2026-06-04.15:28:21::SCWMssOS::Generating standalone artifcats
+TRACE::2026-06-04.15:28:21::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-06-04.15:28:21::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:21::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:21::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:21::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:28:21::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:21::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:28:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.15:28:21::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.15:28:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:28:21::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:28:21::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:28:21::SCWMssOS::Completed writing the mss file at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp
+TRACE::2026-06-04.15:28:21::SCWMssOS::Mss edits present, copying mssfile into export location E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:28:21::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-06-04.15:28:21::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-06-04.15:28:21::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2026-06-04.15:28:21::SCWMssOS::doing bsp build ... 
+TRACE::2026-06-04.15:28:21::SCWMssOS::System Command Ran  E: & cd  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp & make 
+TRACE::2026-06-04.15:28:21::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::make -j 16 --no-print-directory par_libs
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-06-04.15:28:21::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-06-04.15:28:21::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_14/src"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-06-04.15:28:21::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-06-04.15:28:21::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_8/src"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-06-04.15:28:21::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-06-04.15:28:21::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_13/src"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_13/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-06-04.15:28:21::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-06-04.15:28:21::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_6/src"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-06-04.15:28:21::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2026-06-04.15:28:21::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_8/src"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2026-06-04.15:28:21::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2026-06-04.15:28:21::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_6/src"
+
+TRACE::2026-06-04.15:28:21::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2026-06-04.15:28:21::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2026-06-04.15:28:21::SCWMssOS::all -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-06-04.15:28:22::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-06-04.15:28:22::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_14/src"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-06-04.15:28:22::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-06-04.15:28:22::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_8/src"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-06-04.15:28:22::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-06-04.15:28:22::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_13/src"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_13/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2026-06-04.15:28:22::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2026-06-04.15:28:22::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_6/src"
+
+TRACE::2026-06-04.15:28:22::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2026-06-04.15:28:22::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2026-06-04.15:28:22::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:23::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_8/src"
+
+TRACE::2026-06-04.15:28:23::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2026-06-04.15:28:23::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2026-06-04.15:28:23::SCWMssOS::Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:23::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_6/src"
+
+TRACE::2026-06-04.15:28:23::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-06-04.15:28:23::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-06-04.15:28:23::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.15:28:24::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2026-06-04.15:28:25::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2026-06-04.15:28:25::SCWMssOS::make --no-print-directory archive
+
+TRACE::2026-06-04.15:28:25::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/microblaze_
+TRACE::2026-06-04.15:28:25::SCWMssOS::disable_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/_exit.o microblaze_0/lib/xil_
+TRACE::2026-06-04.15:28:25::SCWMssOS::testio.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/xuartli
+TRACE::2026-06-04.15:28:25::SCWMssOS::te_sinit.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_misc_psreset_api.o
+TRACE::2026-06-04.15:28:25::SCWMssOS:: microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_util.o microblaze_0/lib/inbyte.o microblaze_0/lib/xuartlite_stats.o microbla
+TRACE::2026-06-04.15:28:25::SCWMssOS::ze_0/lib/microblaze_exception_handler.o microblaze_0/lib/xbram_g.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microbl
+TRACE::2026-06-04.15:28:25::SCWMssOS::aze_invalidate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/mic
+TRACE::2026-06-04.15:28:25::SCWMssOS::roblaze_interrupt_handler.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/xgpio_g.o microblaze_0/lib/xil_mem.o 
+TRACE::2026-06-04.15:28:25::SCWMssOS::microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xtmrctr_intr.o microblaze_0/lib/xbram_intr.o microblaze_0/
+TRACE::2026-06-04.15:28:25::SCWMssOS::lib/xil_sleepcommon.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/
+TRACE::2026-06-04.15:28:25::SCWMssOS::xtmrctr_l.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xintc_l.o microblaze_0/lib/outbyte.o microblaze_0/lib/xgpio_intr
+TRACE::2026-06-04.15:28:25::SCWMssOS::.o microblaze_0/lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/mi
+TRACE::2026-06-04.15:28:25::SCWMssOS::croblaze_sleep.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/xuartlite_selftest.o micro
+TRACE::2026-06-04.15:28:25::SCWMssOS::blaze_0/lib/xgpio_sinit.o microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/microbl
+TRACE::2026-06-04.15:28:25::SCWMssOS::aze_selftest.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/xio.
+TRACE::2026-06-04.15:28:25::SCWMssOS::o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/microblaze_enable_dcache.o microblaze_0/lib/xbram.o microblaze_0/lib/microblaze
+TRACE::2026-06-04.15:28:25::SCWMssOS::_invalidate_icache_range.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib
+TRACE::2026-06-04.15:28:25::SCWMssOS::/microblaze_invalidate_icache.o microblaze_0/lib/errno.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xintc_options.o microb
+TRACE::2026-06-04.15:28:25::SCWMssOS::laze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xil_exception.o microblaze_0/
+TRACE::2026-06-04.15:28:25::SCWMssOS::lib/pvr.o microblaze_0/lib/xgpio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/
+TRACE::2026-06-04.15:28:25::SCWMssOS::xuartlite_intr.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_assert.o micro
+TRACE::2026-06-04.15:28:25::SCWMssOS::blaze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/xgpio_extra.o microblaze_0/lib/microblaze_enable_icache.o microblaz
+TRACE::2026-06-04.15:28:25::SCWMssOS::e_0/lib/xintc.o microblaze_0/lib/xtmrctr_stats.o microblaze_0/lib/microblaze_init_icache_range.o microblaze_0/lib/xtmrctr_sinit
+TRACE::2026-06-04.15:28:25::SCWMssOS::.o microblaze_0/lib/fcntl.o microblaze_0/lib/xgpio_selftest.o
+
+TRACE::2026-06-04.15:28:25::SCWMssOS::'Finished building libraries'
+
+TRACE::2026-06-04.15:28:25::SCWMssOS::Copying to export directory.
+TRACE::2026-06-04.15:28:25::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-06-04.15:28:25::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-06-04.15:28:25::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2026-06-04.15:28:25::SCWSystem::Completed Processing the sysconfig mb_basic_io
+LOG::2026-06-04.15:28:25::SCWPlatform::Completed generating the artifacts for system configuration mb_basic_io
+TRACE::2026-06-04.15:28:25::SCWPlatform::Started preparing the platform 
+TRACE::2026-06-04.15:28:25::SCWSystem::Writing the bif file for system config mb_basic_io
+TRACE::2026-06-04.15:28:25::SCWSystem::dir created 
+TRACE::2026-06-04.15:28:25::SCWSystem::Writing the bif 
+TRACE::2026-06-04.15:28:25::SCWPlatform::Started writing the spfm file 
+TRACE::2026-06-04.15:28:25::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-06-04.15:28:25::SCWPlatform::Completed generating the platform
+TRACE::2026-06-04.15:28:25::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:28:25::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.15:28:25::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.15:28:25::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.15:28:25::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:25::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:25::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:25::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:28:25::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:25::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:28:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.15:28:25::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.15:28:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:28:25::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:28:25::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:28:25::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:28:25::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"3b93e98136e77df99dffbde699e2c7d6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-06-04.15:28:25::SCWPlatform::updated the xpfm file.
+TRACE::2026-06-04.15:28:25::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:25::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:25::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:25::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.15:28:25::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.15:28:25::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.15:28:25::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.15:28:25::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.15:28:25::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.15:28:25::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.15:28:25::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.15:28:25::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Platform location is E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:52::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2026-06-04.16:52:52::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.16:52:52::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.16:52:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:52::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-06-04.16:52:52::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-06-04.16:52:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:52::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.16:52:52::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/tempdsa/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:52::SCWPlatform::update - Opened existing hwdb design_1_wrapper_1
+TRACE::2026-06-04.16:52:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:52::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.16:52:52::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.16:52:52::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.16:52:52::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2026-06-04.16:52:52::SCWMssOS::Removing the swdes entry for  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-06-04.16:52:52::SCWPlatform::Opened new HwDB with name design_1_wrapper_2
+TRACE::2026-06-04.16:52:52::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWMssOS::Adding the swdes entry, mss present, able to open swdb E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2026-06-04.16:52:52::SCWMssOS::Writing the mss file completed E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.16:52:52::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:52::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2026-06-04.16:52:52::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2026-06-04.16:52:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:52::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.16:52:52::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:52::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"3b93e98136e77df99dffbde699e2c7d6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-06-04.16:52:54::SCWPlatform::Clearing the existing platform
+TRACE::2026-06-04.16:52:54::SCWSystem::Clearing the existing sysconfig
+TRACE::2026-06-04.16:52:54::SCWMssOS::Removing the swdes entry for  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWSystem::Clearing the domains completed.
+TRACE::2026-06-04.16:52:54::SCWPlatform::Clearing the opened hw db.
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Platform location is E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:54::SCWPlatform::Removing the HwDB with name E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:54::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-06-04.16:52:54::SCWPlatform::Opened new HwDB with name design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWReader::Active system found as  mb_basic_io
+TRACE::2026-06-04.16:52:54::SCWReader::Handling sysconfig mb_basic_io
+TRACE::2026-06-04.16:52:54::SCWDomain::checking for install qemu data   : 
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:54::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-06-04.16:52:54::SCWMssOS::No sw design opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWMssOS::mss exists loading the mss file  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWMssOS::Opened the sw design from mss  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWMssOS::Adding the swdes entry E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2026-06-04.16:52:54::SCWMssOS::updating the scw layer about changes
+TRACE::2026-06-04.16:52:54::SCWMssOS::Opened the sw design.  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.16:52:54::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.16:52:54::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.16:52:54::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-06-04.16:52:54::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:52:54::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:52:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-06-04.16:52:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:52:54::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.16:52:54::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:52:54::SCWReader::No isolation master present  
+TRACE::2026-06-04.16:53:09::SCWMssOS::cleaning the bsp 
+TRACE::2026-06-04.16:53:09::SCWMssOS::System Command Ran  E: & cd  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2026-06-04.16:53:09::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s clean 
+
+TRACE::2026-06-04.16:53:09::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s clean 
+
+TRACE::2026-06-04.16:53:09::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_8/src -s clean 
+
+TRACE::2026-06-04.16:53:09::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_13/src -s clean 
+
+TRACE::2026-06-04.16:53:09::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s clean 
+
+TRACE::2026-06-04.16:53:10::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_8/src -s clean 
+
+TRACE::2026-06-04.16:53:10::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_6/src -s clean 
+
+TRACE::2026-06-04.16:53:10::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+LOG::2026-06-04.16:53:15::SCWPlatform::Started generating the artifacts platform mb_basic_io
+TRACE::2026-06-04.16:53:15::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-06-04.16:53:15::SCWPlatform::Started generating the artifacts for system configuration mb_basic_io
+LOG::2026-06-04.16:53:15::SCWSystem::Checking the domain standalone_domain
+LOG::2026-06-04.16:53:15::SCWSystem::Not a boot domain 
+LOG::2026-06-04.16:53:15::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2026-06-04.16:53:15::SCWDomain::Generating domain artifcats
+TRACE::2026-06-04.16:53:15::SCWMssOS::Generating standalone artifcats
+TRACE::2026-06-04.16:53:15::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-06-04.16:53:15::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:15::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:15::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:15::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:53:15::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:15::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:53:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-06-04.16:53:15::SCWPlatform::Could not get the HWDB from existing dbname
+TRACE::2026-06-04.16:53:15::SCWPlatform::Do not have an existing db opened. Attempting to open the hwDb. 
+TRACE::2026-06-04.16:53:15::SCWPlatform::Opened new HwDB with name design_1_wrapper_4
+TRACE::2026-06-04.16:53:15::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:53:15::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.16:53:15::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:53:15::SCWMssOS::Completed writing the mss file at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp
+TRACE::2026-06-04.16:53:15::SCWMssOS::Mss edits present, copying mssfile into export location E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:53:15::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-06-04.16:53:15::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-06-04.16:53:15::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2026-06-04.16:53:15::SCWMssOS::doing bsp build ... 
+TRACE::2026-06-04.16:53:15::SCWMssOS::System Command Ran  E: & cd  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp & make 
+TRACE::2026-06-04.16:53:15::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-06-04.16:53:15::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2026-06-04.16:53:15::SCWMssOS::make -j 16 --no-print-directory par_libs
+
+TRACE::2026-06-04.16:53:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2026-06-04.16:53:15::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-06-04.16:53:15::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-06-04.16:53:15::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:15::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_14/src"
+
+TRACE::2026-06-04.16:53:16::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-06-04.16:53:16::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-06-04.16:53:16::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_8/src"
+
+TRACE::2026-06-04.16:53:16::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-06-04.16:53:16::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-06-04.16:53:16::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_13/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_13/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-06-04.16:53:17::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-06-04.16:53:17::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_6/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-06-04.16:53:17::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2026-06-04.16:53:17::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_8/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2026-06-04.16:53:17::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2026-06-04.16:53:17::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_6/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2026-06-04.16:53:17::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2026-06-04.16:53:17::SCWMssOS::all -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_7/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-06-04.16:53:17::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-06-04.16:53:17::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_14/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-06-04.16:53:17::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-06-04.16:53:17::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_8/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-06-04.16:53:17::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-06-04.16:53:17::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_13/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_13/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2026-06-04.16:53:17::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2026-06-04.16:53:17::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_6/src"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2026-06-04.16:53:17::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2026-06-04.16:53:17::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_8/src"
+
+TRACE::2026-06-04.16:53:18::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2026-06-04.16:53:18::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2026-06-04.16:53:18::SCWMssOS::Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:18::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_6/src"
+
+TRACE::2026-06-04.16:53:18::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-06-04.16:53:18::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-06-04.16:53:18::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-06-04.16:53:20::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2026-06-04.16:53:20::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2026-06-04.16:53:20::SCWMssOS::make --no-print-directory archive
+
+TRACE::2026-06-04.16:53:20::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o microblaze_0/lib/microblaze_
+TRACE::2026-06-04.16:53:20::SCWMssOS::disable_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/_exit.o microblaze_0/lib/xil_
+TRACE::2026-06-04.16:53:20::SCWMssOS::testio.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/xuartli
+TRACE::2026-06-04.16:53:20::SCWMssOS::te_sinit.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_misc_psreset_api.o
+TRACE::2026-06-04.16:53:20::SCWMssOS:: microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_util.o microblaze_0/lib/inbyte.o microblaze_0/lib/xuartlite_stats.o microbla
+TRACE::2026-06-04.16:53:20::SCWMssOS::ze_0/lib/microblaze_exception_handler.o microblaze_0/lib/xbram_g.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microbl
+TRACE::2026-06-04.16:53:20::SCWMssOS::aze_invalidate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/mic
+TRACE::2026-06-04.16:53:20::SCWMssOS::roblaze_interrupt_handler.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/xgpio_g.o microblaze_0/lib/xil_mem.o 
+TRACE::2026-06-04.16:53:20::SCWMssOS::microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xtmrctr_intr.o microblaze_0/lib/xbram_intr.o microblaze_0/
+TRACE::2026-06-04.16:53:20::SCWMssOS::lib/xil_sleepcommon.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/
+TRACE::2026-06-04.16:53:20::SCWMssOS::xtmrctr_l.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xintc_l.o microblaze_0/lib/outbyte.o microblaze_0/lib/xgpio_intr
+TRACE::2026-06-04.16:53:20::SCWMssOS::.o microblaze_0/lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/mi
+TRACE::2026-06-04.16:53:20::SCWMssOS::croblaze_sleep.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/xuartlite_selftest.o micro
+TRACE::2026-06-04.16:53:20::SCWMssOS::blaze_0/lib/xgpio_sinit.o microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/microbl
+TRACE::2026-06-04.16:53:20::SCWMssOS::aze_selftest.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/xio.
+TRACE::2026-06-04.16:53:20::SCWMssOS::o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/microblaze_enable_dcache.o microblaze_0/lib/xbram.o microblaze_0/lib/microblaze
+TRACE::2026-06-04.16:53:20::SCWMssOS::_invalidate_icache_range.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib
+TRACE::2026-06-04.16:53:20::SCWMssOS::/microblaze_invalidate_icache.o microblaze_0/lib/errno.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xintc_options.o microb
+TRACE::2026-06-04.16:53:20::SCWMssOS::laze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xil_exception.o microblaze_0/
+TRACE::2026-06-04.16:53:20::SCWMssOS::lib/pvr.o microblaze_0/lib/xgpio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/
+TRACE::2026-06-04.16:53:20::SCWMssOS::xuartlite_intr.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_assert.o micro
+TRACE::2026-06-04.16:53:20::SCWMssOS::blaze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/xgpio_extra.o microblaze_0/lib/microblaze_enable_icache.o microblaz
+TRACE::2026-06-04.16:53:20::SCWMssOS::e_0/lib/xintc.o microblaze_0/lib/xtmrctr_stats.o microblaze_0/lib/microblaze_init_icache_range.o microblaze_0/lib/xtmrctr_sinit
+TRACE::2026-06-04.16:53:20::SCWMssOS::.o microblaze_0/lib/fcntl.o microblaze_0/lib/xgpio_selftest.o
+
+TRACE::2026-06-04.16:53:20::SCWMssOS::'Finished building libraries'
+
+TRACE::2026-06-04.16:53:20::SCWMssOS::Copying to export directory.
+TRACE::2026-06-04.16:53:20::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-06-04.16:53:20::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-06-04.16:53:20::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2026-06-04.16:53:20::SCWSystem::Completed Processing the sysconfig mb_basic_io
+LOG::2026-06-04.16:53:20::SCWPlatform::Completed generating the artifacts for system configuration mb_basic_io
+TRACE::2026-06-04.16:53:20::SCWPlatform::Started preparing the platform 
+TRACE::2026-06-04.16:53:20::SCWSystem::Writing the bif file for system config mb_basic_io
+TRACE::2026-06-04.16:53:20::SCWSystem::dir created 
+TRACE::2026-06-04.16:53:20::SCWSystem::Writing the bif 
+TRACE::2026-06-04.16:53:20::SCWPlatform::Started writing the spfm file 
+TRACE::2026-06-04.16:53:20::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-06-04.16:53:20::SCWPlatform::Completed generating the platform
+TRACE::2026-06-04.16:53:20::SCWMssOS::Saving the mss changes E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:53:20::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-06-04.16:53:20::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-06-04.16:53:20::SCWMssOS::Commit changes completed.
+TRACE::2026-06-04.16:53:20::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:20::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:20::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:20::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:53:20::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:20::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:53:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-06-04.16:53:20::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-06-04.16:53:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:53:20::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:53:20::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.16:53:20::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:53:20::SCWWriter::formatted JSON is {
+	"platformName":	"mb_basic_io",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_basic_io",
+	"platHandOff":	"E:/XilinxProject/IO_exp/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_basic_io",
+	"systems":	[{
+			"systemName":	"mb_basic_io",
+			"systemDesc":	"mb_basic_io",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_basic_io",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.6",
+					"mssFile":	"",
+					"md5Digest":	"3b93e98136e77df99dffbde699e2c7d6",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-06-04.16:53:20::SCWPlatform::updated the xpfm file.
+TRACE::2026-06-04.16:53:20::SCWPlatform::Trying to open the hw design at E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:20::SCWPlatform::DSA given E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:20::SCWPlatform::DSA absoulate path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:20::SCWPlatform::DSA directory E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw
+TRACE::2026-06-04.16:53:20::SCWPlatform:: Platform Path E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/hw/design_1_wrapper.xsa
+TRACE::2026-06-04.16:53:20::SCWPlatform:: Unique name xilinx:nexys4_ddr::0.0
+TRACE::2026-06-04.16:53:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2026-06-04.16:53:20::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2026-06-04.16:53:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-06-04.16:53:20::SCWMssOS::Checking the sw design at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:53:20::SCWMssOS::DEBUG:  swdes dump  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-06-04.16:53:20::SCWMssOS::Sw design exists and opened at  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2026-06-04.16:58:17::SCWMssOS::cleaning the bsp 
+TRACE::2026-06-04.16:58:17::SCWMssOS::System Command Ran  E: & cd  E:/XilinxProject/IO_exp/IO_exp.sw/mb_basic_io/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2026-06-04.16:58:17::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_7/src -s clean 
+
+TRACE::2026-06-04.16:58:17::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_14/src -s clean 
+
+TRACE::2026-06-04.16:58:17::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_8/src -s clean 
+
+TRACE::2026-06-04.16:58:18::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_13/src -s clean 
+
+TRACE::2026-06-04.16:58:18::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_6/src -s clean 
+
+TRACE::2026-06-04.16:58:18::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_8/src -s clean 
+
+TRACE::2026-06-04.16:58:18::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_6/src -s clean 
+
+TRACE::2026-06-04.16:58:18::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+

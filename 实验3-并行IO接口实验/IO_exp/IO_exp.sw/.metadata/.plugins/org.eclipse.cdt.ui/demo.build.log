@@ -1,0 +1,7 @@
+16:58:10 **** Clean-only build of configuration Debug for project demo ****
+make clean 
+rm -rf  ./src/demo.o  ./src/demo.d  demo.elf.size  demo.elf
+' '
+
+16:58:11 Build Finished (took 267ms)
+
