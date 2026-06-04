@@ -1,0 +1,129 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xintc.h"
+#include "xtmrctr.h"
+#include "mb_interface.h"
+
+#define Timer_TCSR      XPAR_AXI_TIMER_0_BASEADDR+XTC_TCSR_OFFSET
+#define Timer_TLR       XPAR_AXI_TIMER_0_BASEADDR+XTC_TLR_OFFSET
+#define Timer_TCR       XPAR_AXI_TIMER_0_BASEADDR+XTC_TCR_OFFSET
+
+#define intc_ISR        XPAR_AXI_INTC_0_BASEADDR+XIN_ISR_OFFSET
+#define intc_IER        XPAR_AXI_INTC_0_BASEADDR+XIN_IER_OFFSET
+#define intc_IAR        XPAR_AXI_INTC_0_BASEADDR+XIN_IAR_OFFSET
+#define intc_MER        XPAR_AXI_INTC_0_BASEADDR+XIN_MER_OFFSET
+
+#define Btn_ISR         XPAR_AXI_GPIO_2_BASEADDR+XGPIO_ISR_OFFSET
+#define Btn_IER         XPAR_AXI_GPIO_2_BASEADDR+XGPIO_IER_OFFSET
+#define Btn_GIER        XPAR_AXI_GPIO_2_BASEADDR+XGPIO_GIE_OFFSET
+#define Switch_ISR      XPAR_AXI_GPIO_0_BASEADDR+XGPIO_ISR_OFFSET
+#define Switch_IER      XPAR_AXI_GPIO_0_BASEADDR+XGPIO_IER_OFFSET
+#define Switch_GIER     XPAR_AXI_GPIO_0_BASEADDR+XGPIO_GIE_OFFSET
+
+#define Reset_Value 10000
+
+void My_ISR() __attribute__((interrupt_handler));
+void PushBtnHandler();
+void SwitchHandler();
+void seg7_TimerHandler();
+
+char segcode[6] = {0x00,0xc6,0xc1,0xc7,0xa1,0xce};   //c,u,l,d,r
+short pos = 0xff7f;  //数码管位选信号
+u8 button = 0;  //按键状态
+
+int init(){
+    Xil_Out16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_TRI_OFFSET, 0xffff);   //配置GPIO0 ch1(开关)为输入
+    Xil_Out16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_TRI2_OFFSET, 0x0000);  //配置GPIO0 ch2(LED)为输出
+    Xil_Out16(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_TRI_OFFSET, 0x0);  //配置GPIO1 ch1数码管段选信号为输出
+    Xil_Out16(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_TRI2_OFFSET, 0x0);  //配置GPIO1 ch2数码管位选信号为输出
+    Xil_Out8(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_TRI_OFFSET, 0x1f);  //按键gpio输入 控制低五位
+
+    Xil_Out32(Btn_IER, XGPIO_IR_CH1_MASK);                  //允许GPIO2 ch1中断
+    Xil_Out32(Btn_GIER, XGPIO_GIE_GINTR_ENABLE_MASK);       //允许GPIO2中断输出
+    Xil_Out32(Switch_IER, XGPIO_IR_CH1_MASK);               //允许GPIO0 ch1中断
+    Xil_Out32(Switch_GIER, XGPIO_GIE_GINTR_ENABLE_MASK);    //允许GPIO0全局中断
+
+    Xil_Out32(Timer_TCSR, Xil_In32(Timer_TCSR) &~XTC_CSR_ENABLE_INT_MASK);  //停止计数器
+    Xil_Out32(Timer_TLR, Reset_Value);                                      //预置计数器初值
+    Xil_Out32(Timer_TCSR, Xil_In32(Timer_TCSR) | XTC_CSR_LOAD_MASK);        //装载计数器初值
+    Xil_Out32(Timer_TCSR, (Xil_In32(Timer_TCSR)&~XTC_CSR_LOAD_MASK)\
+    |XTC_CSR_ENABLE_TMR_MASK|XTC_CSR_ENABLE_INT_MASK|XTC_CSR_AUTO_RELOAD_MASK|XTC_CSR_DOWN_COUNT_MASK);  //使能计数器中断
+
+    Xil_Out32(intc_IER, XPAR_AXI_TIMER_0_INTERRUPT_MASK|XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK|XPAR_AXI_GPIO_2_IP2INTC_IRPT_MASK);  //使能中断
+    Xil_Out32(intc_MER, XIN_INT_MASTER_ENABLE_MASK|XIN_INT_HARDWARE_ENABLE_MASK);
+    microblaze_enable_interrupts();  //使能处理器中断
+    return 0;
+}
+
+
+int main(){
+    init();
+    while(1){
+        //int status = Xil_In32(intc_ISR);
+        //xil_printf("ISR status: %x\r\n", status);
+    }
+    return 0;
+}
+
+void My_ISR(void) {
+    int status = Xil_In32(intc_ISR);
+    // xil_printf("ISR status: %x\r\n", status);
+    if(status!=4) xil_printf("ISR status: %x\r\n", status);
+    if((status & XPAR_AXI_TIMER_0_INTERRUPT_MASK)==XPAR_AXI_TIMER_0_INTERRUPT_MASK) {  //定时器中断
+        seg7_TimerHandler();
+    }
+    else if((status & XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK)==XPAR_AXI_GPIO_0_IP2INTC_IRPT_MASK) {  //GPIO0中断
+        SwitchHandler();
+    }
+    else if((status & XPAR_AXI_GPIO_2_IP2INTC_IRPT_MASK)==XPAR_AXI_GPIO_2_IP2INTC_IRPT_MASK) {  //GPIO2中断
+        PushBtnHandler();
+    }
+    Xil_Out32(intc_IAR, status);  //清除中断
+}
+
+void PushBtnHandler(){
+    switch (Xil_In8((XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET)))
+        {
+        case 1:
+            button = 1;
+            break;
+        case 2:
+            button = 2;
+            break;
+        case 4:
+            button = 3;
+            break;
+        case 16:
+            button = 4;
+            break;
+        case 8:
+            button = 5;
+            break;
+        default:
+            button = 0;
+            break;
+        }
+        xil_printf("Button Interrupt!button: %d\r\n", button);
+    Xil_Out32(Btn_ISR, Xil_In32(Btn_ISR));  //清除GPIO2中断
+}
+
+void SwitchHandler(){
+    u16 sw = Xil_In16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA_OFFSET);  //读取开关状态
+    xil_printf("Switch Interrupt!Switch state: %x\r\n", sw);
+    Xil_Out16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA2_OFFSET, sw);   //将开关状态输出到LED
+    Xil_Out32(Switch_ISR, Xil_In32(Switch_ISR));  //清除GPIO0中断
+}
+
+int counter = 0;
+void seg7_TimerHandler(){
+    // xil_printf("Timer Interrupt! button: %d\r\n", button);
+    Xil_Out16(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_DATA2_OFFSET, segcode[button]);    //根据开关状态输出数码管段选信号
+    Xil_Out16(XPAR_AXI_GPIO_1_BASEADDR+XGPIO_DATA_OFFSET, pos);                 //输出数码管位选信号
+    pos = pos >> 1;  //位选信号循环右移
+    counter++;
+    if(counter==8) {
+        counter = 0;
+        pos = 0xff7f;  //重置位选信号
+    }
+    Xil_Out32(Timer_TCSR, Xil_In32(Timer_TCSR));  //清除定时器中断
+}

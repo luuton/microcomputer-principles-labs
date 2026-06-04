@@ -1,0 +1,8 @@
+00:38:33 **** Clean-only build of configuration Debug for project serial_IO_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+00:38:33 Build Finished (took 196ms)
+

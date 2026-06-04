@@ -1,0 +1,31 @@
+00:38:30 **** Clean-only build of project mb_basic_io ****
+buildplatform.bat 14056 mb_basic_io clean 
+XSDB Server Channel: tcfchan#38
+Cleaning the BSP for domain  - standalone_domain
+make -C microblaze_0/libsrc/bram_v4_7/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_14/src -s clean 
+
+make -C microblaze_0/libsrc/gpio_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_13/src -s clean 
+
+make -C microblaze_0/libsrc/spi_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v7_6/src -s clean 
+
+make -C microblaze_0/libsrc/tmrctr_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_6/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+00:38:33 **** Clean-only build of configuration Debug for project serial_IO ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  serial_IO.elf.size  serial_IO.elf
+' '
+00:38:33 **** Clean-only build of configuration Debug for project serial_IO_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif

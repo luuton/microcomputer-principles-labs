@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="serial_IO" location="E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO" platform="E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/mb_basic_io.xpfm" platformUID="xilinx:nexys4_ddr::0.0(custom)" systemProject="serial_IO_system" sysConfig="mb_basic_io" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="936443a7df95bf64a116b72f0f29807e">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.611033226" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.435342238" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

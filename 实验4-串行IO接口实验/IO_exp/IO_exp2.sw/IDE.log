@@ -1,0 +1,2134 @@
+18:23:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\XilinxProject\IO_exp\IO_exp2.sw\temp_xsdb_launch_script.tcl
+18:23:24 INFO  : Registering command handlers for Vitis TCF services
+18:23:24 INFO  : Platform repository initialization has completed.
+18:23:27 INFO  : XSCT server has started successfully.
+18:23:27 INFO  : plnx-install-location is set to ''
+18:23:27 INFO  : Successfully done setting XSCT server connection channel  
+18:23:27 INFO  : Successfully done query RDI_DATADIR 
+18:23:27 INFO  : Successfully done setting workspace for the tool. 
+18:24:03 INFO  : Result from executing command 'getProjects': mb_basic_io
+18:24:03 INFO  : Result from executing command 'getPlatforms': 
+18:34:25 INFO  : Result from executing command 'getProjects': mb_basic_io
+18:34:25 INFO  : Result from executing command 'getPlatforms': mb_basic_io|E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/mb_basic_io.xpfm
+18:34:31 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+18:34:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:34:44 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+18:34:44 INFO  : 'jtag frequency' command is executed.
+18:34:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+18:34:46 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+18:34:46 INFO  : Context for processor 'microblaze_0' is selected.
+18:34:47 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+18:34:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:34:47 INFO  : Context for processor 'microblaze_0' is selected.
+18:34:47 INFO  : System reset is completed.
+18:34:50 INFO  : 'after 3000' command is executed.
+18:34:50 INFO  : Context for processor 'microblaze_0' is selected.
+18:34:50 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+18:34:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+18:34:50 INFO  : Context for processor 'microblaze_0' is selected.
+18:34:50 INFO  : 'con' command is executed.
+18:34:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:34:50 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+18:38:32 INFO  : Disconnected from the channel tcfchan#2.
+18:38:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:38:32 INFO  : Jtag cable 'Digilent Nexys4DDR 210292744729A' is selected.
+18:38:32 INFO  : 'jtag frequency' command is executed.
+18:38:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292744729A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292744729A-13631093-0"}' command is executed.
+18:38:35 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+18:38:35 INFO  : Context for processor 'microblaze_0' is selected.
+18:38:35 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+18:38:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:38:35 INFO  : Context for processor 'microblaze_0' is selected.
+18:38:35 INFO  : System reset is completed.
+18:38:38 INFO  : 'after 3000' command is executed.
+18:38:38 INFO  : Context for processor 'microblaze_0' is selected.
+18:38:38 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+18:38:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292744729A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292744729A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+18:38:38 INFO  : Context for processor 'microblaze_0' is selected.
+18:38:38 INFO  : 'con' command is executed.
+18:38:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+18:38:38 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+18:42:40 INFO  : Disconnected from the channel tcfchan#3.
+19:02:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\XilinxProject\IO_exp\IO_exp2.sw\temp_xsdb_launch_script.tcl
+19:02:04 INFO  : XSCT server has started successfully.
+19:02:04 INFO  : Successfully done setting XSCT server connection channel  
+19:02:04 INFO  : plnx-install-location is set to ''
+19:02:04 INFO  : Successfully done setting workspace for the tool. 
+19:02:08 INFO  : Platform repository initialization has completed.
+19:02:08 INFO  : Registering command handlers for Vitis TCF services
+19:02:09 INFO  : Successfully done query RDI_DATADIR 
+20:01:33 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:02:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:02:44 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:02:44 INFO  : 'jtag frequency' command is executed.
+20:02:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:02:47 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:02:47 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:47 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:02:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:02:47 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:47 INFO  : System reset is completed.
+20:02:50 INFO  : 'after 3000' command is executed.
+20:02:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:50 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:02:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:02:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:50 INFO  : 'con' command is executed.
+20:02:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:02:50 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:07:12 INFO  : Result from executing command 'getProjects': mb_basic_io
+20:07:12 INFO  : Result from executing command 'getPlatforms': mb_basic_io|E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/mb_basic_io.xpfm
+20:07:18 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:07:51 INFO  : Result from executing command 'getProjects': mb_basic_io
+20:07:51 INFO  : Result from executing command 'getPlatforms': mb_basic_io|E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/mb_basic_io.xpfm
+20:07:51 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:08:03 INFO  : Disconnected from the channel tcfchan#1.
+20:08:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:08:03 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:08:03 INFO  : 'jtag frequency' command is executed.
+20:08:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:08:05 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:08:05 INFO  : Context for processor 'microblaze_0' is selected.
+20:08:11 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:08:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:08:11 INFO  : Context for processor 'microblaze_0' is selected.
+20:08:11 INFO  : System reset is completed.
+20:08:14 INFO  : 'after 3000' command is executed.
+20:08:14 INFO  : Context for processor 'microblaze_0' is selected.
+20:08:14 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:08:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:08:14 INFO  : Context for processor 'microblaze_0' is selected.
+20:08:14 INFO  : 'con' command is executed.
+20:08:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:08:14 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:09:47 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:09:53 INFO  : Disconnected from the channel tcfchan#4.
+20:09:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:09:53 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:09:53 INFO  : 'jtag frequency' command is executed.
+20:09:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:09:56 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:09:56 INFO  : Context for processor 'microblaze_0' is selected.
+20:09:56 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:09:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:09:56 INFO  : Context for processor 'microblaze_0' is selected.
+20:09:56 INFO  : System reset is completed.
+20:09:59 INFO  : 'after 3000' command is executed.
+20:09:59 INFO  : Context for processor 'microblaze_0' is selected.
+20:09:59 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:09:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:09:59 INFO  : Context for processor 'microblaze_0' is selected.
+20:09:59 INFO  : 'con' command is executed.
+20:09:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:09:59 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:11:48 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:11:56 INFO  : Disconnected from the channel tcfchan#5.
+20:11:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:11:56 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:11:56 INFO  : 'jtag frequency' command is executed.
+20:11:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:11:58 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:11:58 INFO  : Context for processor 'microblaze_0' is selected.
+20:11:58 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:11:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:11:58 INFO  : Context for processor 'microblaze_0' is selected.
+20:11:58 INFO  : System reset is completed.
+20:12:01 INFO  : 'after 3000' command is executed.
+20:12:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:12:02 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:12:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:12:02 INFO  : Context for processor 'microblaze_0' is selected.
+20:12:02 INFO  : 'con' command is executed.
+20:12:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:12:02 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:12:52 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:13:02 INFO  : Disconnected from the channel tcfchan#6.
+20:13:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:13:03 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:13:03 INFO  : 'jtag frequency' command is executed.
+20:13:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:13:05 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:13:05 INFO  : Context for processor 'microblaze_0' is selected.
+20:13:05 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:13:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:13:05 INFO  : Context for processor 'microblaze_0' is selected.
+20:13:05 INFO  : System reset is completed.
+20:13:08 INFO  : 'after 3000' command is executed.
+20:13:08 INFO  : Context for processor 'microblaze_0' is selected.
+20:13:08 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:13:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:13:08 INFO  : Context for processor 'microblaze_0' is selected.
+20:13:08 INFO  : 'con' command is executed.
+20:13:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:13:08 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:23:59 INFO  : Result from executing command 'removePlatformRepo': 
+20:24:01 INFO  : Hardware specification for platform project 'mb_basic_io' is updated.
+20:24:18 INFO  : Result from executing command 'getProjects': mb_basic_io
+20:24:18 INFO  : Result from executing command 'getPlatforms': 
+20:24:23 INFO  : Result from executing command 'removePlatformRepo': 
+20:24:48 INFO  : Result from executing command 'getProjects': mb_basic_io
+20:24:48 INFO  : Result from executing command 'getPlatforms': 
+20:24:48 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:24:58 INFO  : The hardware specification used by project 'serial_IO' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:24:58 INFO  : The file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+20:24:58 INFO  : The file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO\_ide\bitstream\design_1_wrapper.mmi' stored in project is removed.
+20:24:58 INFO  : The updated bitstream files are copied from platform to folder 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO\_ide\bitstream' in project 'serial_IO'.
+20:25:49 INFO  : Disconnected from the channel tcfchan#7.
+20:25:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:25:49 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:25:49 INFO  : 'jtag frequency' command is executed.
+20:25:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:25:52 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:25:52 INFO  : Context for processor 'microblaze_0' is selected.
+20:25:52 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:25:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:25:52 INFO  : Context for processor 'microblaze_0' is selected.
+20:25:52 INFO  : System reset is completed.
+20:25:55 INFO  : 'after 3000' command is executed.
+20:25:55 INFO  : Context for processor 'microblaze_0' is selected.
+20:25:55 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:25:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:25:55 INFO  : Context for processor 'microblaze_0' is selected.
+20:25:55 INFO  : 'con' command is executed.
+20:25:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:25:55 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:40:06 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:40:22 INFO  : Disconnected from the channel tcfchan#12.
+20:40:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:40:22 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:40:22 INFO  : 'jtag frequency' command is executed.
+20:40:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:40:24 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:40:24 INFO  : Context for processor 'microblaze_0' is selected.
+20:40:24 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:40:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:40:24 INFO  : Context for processor 'microblaze_0' is selected.
+20:40:24 INFO  : System reset is completed.
+20:40:27 INFO  : 'after 3000' command is executed.
+20:40:27 INFO  : Context for processor 'microblaze_0' is selected.
+20:40:27 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:40:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:40:28 INFO  : Context for processor 'microblaze_0' is selected.
+20:40:28 INFO  : 'con' command is executed.
+20:40:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:40:28 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:46:06 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:46:15 INFO  : Disconnected from the channel tcfchan#13.
+20:46:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:46:15 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:46:15 INFO  : 'jtag frequency' command is executed.
+20:46:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:46:17 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:46:18 INFO  : Context for processor 'microblaze_0' is selected.
+20:46:18 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:46:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:46:18 INFO  : Context for processor 'microblaze_0' is selected.
+20:46:18 INFO  : System reset is completed.
+20:46:21 INFO  : 'after 3000' command is executed.
+20:46:21 INFO  : Context for processor 'microblaze_0' is selected.
+20:46:21 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:46:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:46:21 INFO  : Context for processor 'microblaze_0' is selected.
+20:46:21 INFO  : 'con' command is executed.
+20:46:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:46:21 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:48:29 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:48:36 INFO  : Disconnected from the channel tcfchan#14.
+20:48:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:48:36 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:48:36 INFO  : 'jtag frequency' command is executed.
+20:48:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:48:39 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:48:39 INFO  : Context for processor 'microblaze_0' is selected.
+20:48:39 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:48:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:48:39 INFO  : Context for processor 'microblaze_0' is selected.
+20:48:39 INFO  : System reset is completed.
+20:48:42 INFO  : 'after 3000' command is executed.
+20:48:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:48:42 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:48:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:48:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:48:42 INFO  : 'con' command is executed.
+20:48:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:48:42 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:50:08 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:50:18 INFO  : Disconnected from the channel tcfchan#15.
+20:50:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:50:18 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:50:18 INFO  : 'jtag frequency' command is executed.
+20:50:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:50:21 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:50:21 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:21 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:50:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:50:21 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:21 INFO  : System reset is completed.
+20:50:24 INFO  : 'after 3000' command is executed.
+20:50:24 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:24 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:50:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:50:24 INFO  : Context for processor 'microblaze_0' is selected.
+20:50:24 INFO  : 'con' command is executed.
+20:50:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:50:24 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:56:00 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:56:09 INFO  : Disconnected from the channel tcfchan#16.
+20:56:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:09 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:56:09 INFO  : 'jtag frequency' command is executed.
+20:56:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:56:11 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit"
+20:56:11 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:11 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:56:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:56:12 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:12 INFO  : System reset is completed.
+20:56:15 INFO  : 'after 3000' command is executed.
+20:56:15 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:15 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:56:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:56:15 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:15 INFO  : 'con' command is executed.
+20:56:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:56:15 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+20:57:03 INFO  : Bit file 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit' is generated.
+20:57:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:57:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:57:05 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+20:58:36 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+20:58:44 INFO  : Disconnected from the channel tcfchan#17.
+20:58:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:58:44 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+20:58:44 INFO  : 'jtag frequency' command is executed.
+20:58:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+20:58:46 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+20:58:46 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:46 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+20:58:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:58:46 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:46 INFO  : System reset is completed.
+20:58:49 INFO  : 'after 3000' command is executed.
+20:58:49 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:49 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+20:58:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+20:58:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:58:50 INFO  : 'con' command is executed.
+20:58:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:58:50 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:06:39 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:06:48 INFO  : Disconnected from the channel tcfchan#18.
+21:06:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:06:48 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:06:48 INFO  : 'jtag frequency' command is executed.
+21:06:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:06:50 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:06:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:50 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:06:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:06:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:50 INFO  : System reset is completed.
+21:06:53 INFO  : 'after 3000' command is executed.
+21:06:53 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:53 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:06:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:06:53 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:53 INFO  : 'con' command is executed.
+21:06:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:06:53 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:11:53 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:12:08 INFO  : Disconnected from the channel tcfchan#19.
+21:12:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:12:08 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:12:08 INFO  : 'jtag frequency' command is executed.
+21:12:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:12:10 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:12:10 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:10 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:12:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:12:10 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:10 INFO  : System reset is completed.
+21:12:13 INFO  : 'after 3000' command is executed.
+21:12:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:13 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:12:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:12:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:14 INFO  : 'con' command is executed.
+21:12:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:12:14 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:14:13 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:14:22 INFO  : Disconnected from the channel tcfchan#20.
+21:14:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:22 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:14:22 INFO  : 'jtag frequency' command is executed.
+21:14:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:14:24 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:14:24 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:24 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:14:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:14:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:25 INFO  : System reset is completed.
+21:14:28 INFO  : 'after 3000' command is executed.
+21:14:28 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:28 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:14:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:14:28 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:28 INFO  : 'con' command is executed.
+21:14:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:14:28 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:16:10 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:16:24 INFO  : Disconnected from the channel tcfchan#21.
+21:16:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:24 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:16:24 INFO  : 'jtag frequency' command is executed.
+21:16:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:16:26 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:16:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:26 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:16:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:16:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:26 INFO  : System reset is completed.
+21:16:29 INFO  : 'after 3000' command is executed.
+21:16:30 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:30 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:16:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:16:30 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:30 INFO  : 'con' command is executed.
+21:16:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:16:30 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:17:47 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:17:53 INFO  : Disconnected from the channel tcfchan#22.
+21:17:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:17:53 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:17:53 INFO  : 'jtag frequency' command is executed.
+21:17:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:17:55 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:17:56 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:56 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:17:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:17:56 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:56 INFO  : System reset is completed.
+21:17:59 INFO  : 'after 3000' command is executed.
+21:17:59 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:59 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:17:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:17:59 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:59 INFO  : 'con' command is executed.
+21:17:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:17:59 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:34:19 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:34:31 INFO  : Disconnected from the channel tcfchan#23.
+21:34:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:34:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:34:40 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:34:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:34:56 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:34:56 INFO  : 'jtag frequency' command is executed.
+21:34:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:34:58 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:34:58 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:58 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:34:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:34:58 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:58 INFO  : System reset is completed.
+21:35:01 INFO  : 'after 3000' command is executed.
+21:35:01 INFO  : Context for processor 'microblaze_0' is selected.
+21:35:01 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:35:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:35:01 INFO  : Context for processor 'microblaze_0' is selected.
+21:35:01 INFO  : 'con' command is executed.
+21:35:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:35:01 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:36:03 INFO  : Disconnected from the channel tcfchan#24.
+21:36:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:36:03 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:36:03 INFO  : 'jtag frequency' command is executed.
+21:36:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:36:05 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:36:05 INFO  : Context for processor 'microblaze_0' is selected.
+21:36:05 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:36:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:36:05 INFO  : Context for processor 'microblaze_0' is selected.
+21:36:05 INFO  : System reset is completed.
+21:36:08 INFO  : 'after 3000' command is executed.
+21:36:08 INFO  : Context for processor 'microblaze_0' is selected.
+21:36:08 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:36:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:36:08 INFO  : Context for processor 'microblaze_0' is selected.
+21:36:08 INFO  : 'con' command is executed.
+21:36:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:36:08 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:38:40 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:38:46 INFO  : Disconnected from the channel tcfchan#25.
+21:38:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:38:46 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:38:46 INFO  : 'jtag frequency' command is executed.
+21:38:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:38:48 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:38:48 INFO  : Context for processor 'microblaze_0' is selected.
+21:38:48 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:38:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:38:48 INFO  : Context for processor 'microblaze_0' is selected.
+21:38:48 INFO  : System reset is completed.
+21:38:51 INFO  : 'after 3000' command is executed.
+21:38:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:38:51 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:38:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:38:52 INFO  : Context for processor 'microblaze_0' is selected.
+21:38:52 INFO  : 'con' command is executed.
+21:38:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:38:52 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:49:35 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:53:00 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:55:02 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:55:12 INFO  : Disconnected from the channel tcfchan#26.
+21:55:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:55:12 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:55:12 INFO  : 'jtag frequency' command is executed.
+21:55:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:55:14 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:55:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:55:14 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:55:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:55:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:55:14 INFO  : System reset is completed.
+21:55:17 INFO  : 'after 3000' command is executed.
+21:55:17 INFO  : Context for processor 'microblaze_0' is selected.
+21:55:17 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:55:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:55:17 INFO  : Context for processor 'microblaze_0' is selected.
+21:55:17 INFO  : 'con' command is executed.
+21:55:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:55:17 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+21:57:27 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+21:57:33 INFO  : Disconnected from the channel tcfchan#27.
+21:57:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:57:34 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+21:57:34 INFO  : 'jtag frequency' command is executed.
+21:57:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+21:57:36 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+21:57:36 INFO  : Context for processor 'microblaze_0' is selected.
+21:57:36 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+21:57:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:57:36 INFO  : Context for processor 'microblaze_0' is selected.
+21:57:36 INFO  : System reset is completed.
+21:57:39 INFO  : 'after 3000' command is executed.
+21:57:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:57:39 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+21:57:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+21:57:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:57:39 INFO  : 'con' command is executed.
+21:57:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:57:39 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+22:01:18 INFO  : Disconnected from the channel tcfchan#28.
+22:27:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\XilinxProject\IO_exp\IO_exp2.sw\temp_xsdb_launch_script.tcl
+22:27:50 INFO  : XSCT server has started successfully.
+22:27:50 INFO  : plnx-install-location is set to ''
+22:27:50 INFO  : Registering command handlers for Vitis TCF services
+22:27:50 INFO  : Platform repository initialization has completed.
+22:27:50 INFO  : Successfully done setting XSCT server connection channel  
+22:27:50 INFO  : Successfully done query RDI_DATADIR 
+22:27:50 INFO  : Successfully done setting workspace for the tool. 
+22:29:54 INFO  : Result from executing command 'getProjects': mb_basic_io
+22:29:54 INFO  : Result from executing command 'getPlatforms': mb_basic_io|E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/mb_basic_io.xpfm
+22:29:55 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+22:30:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:30:09 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+22:30:09 INFO  : 'jtag frequency' command is executed.
+22:30:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+22:30:11 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+22:30:11 INFO  : Context for processor 'microblaze_0' is selected.
+22:30:11 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+22:30:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:30:11 INFO  : Context for processor 'microblaze_0' is selected.
+22:30:11 INFO  : System reset is completed.
+22:30:14 INFO  : 'after 3000' command is executed.
+22:30:15 INFO  : Context for processor 'microblaze_0' is selected.
+22:30:15 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+22:30:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+22:30:15 INFO  : Context for processor 'microblaze_0' is selected.
+22:30:15 INFO  : 'con' command is executed.
+22:30:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:30:15 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+22:35:43 INFO  : Disconnected from the channel tcfchan#2.
+22:35:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:35:44 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+22:35:44 INFO  : 'jtag frequency' command is executed.
+22:35:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+22:35:46 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+22:35:46 INFO  : Context for processor 'microblaze_0' is selected.
+22:35:46 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+22:35:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:35:46 INFO  : Context for processor 'microblaze_0' is selected.
+22:35:46 INFO  : System reset is completed.
+22:35:49 INFO  : 'after 3000' command is executed.
+22:35:49 INFO  : Context for processor 'microblaze_0' is selected.
+22:35:49 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+22:35:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+22:35:49 INFO  : Context for processor 'microblaze_0' is selected.
+22:35:49 INFO  : 'con' command is executed.
+22:35:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:35:49 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+22:35:56 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+22:36:55 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+22:37:27 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+22:38:09 INFO  : Disconnected from the channel tcfchan#3.
+22:38:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:38:10 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+22:38:10 INFO  : 'jtag frequency' command is executed.
+22:38:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+22:38:12 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+22:38:12 INFO  : Context for processor 'microblaze_0' is selected.
+22:38:12 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+22:38:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:38:12 INFO  : Context for processor 'microblaze_0' is selected.
+22:38:12 INFO  : System reset is completed.
+22:38:15 INFO  : 'after 3000' command is executed.
+22:38:15 INFO  : Context for processor 'microblaze_0' is selected.
+22:38:15 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+22:38:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+22:38:15 INFO  : Context for processor 'microblaze_0' is selected.
+22:38:15 INFO  : 'con' command is executed.
+22:38:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:38:15 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+22:39:42 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+22:39:52 INFO  : Disconnected from the channel tcfchan#4.
+22:39:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:39:52 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+22:39:52 INFO  : 'jtag frequency' command is executed.
+22:39:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+22:39:54 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+22:39:54 INFO  : Context for processor 'microblaze_0' is selected.
+22:39:54 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+22:39:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:39:54 INFO  : Context for processor 'microblaze_0' is selected.
+22:39:54 INFO  : System reset is completed.
+22:39:57 INFO  : 'after 3000' command is executed.
+22:39:57 INFO  : Context for processor 'microblaze_0' is selected.
+22:39:57 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+22:39:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+22:39:57 INFO  : Context for processor 'microblaze_0' is selected.
+22:39:57 INFO  : 'con' command is executed.
+22:39:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:39:57 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+22:40:29 INFO  : Disconnected from the channel tcfchan#5.
+22:40:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:40:30 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+22:40:30 INFO  : 'jtag frequency' command is executed.
+22:40:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+22:40:32 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+22:40:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:32 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+22:40:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:40:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:32 INFO  : System reset is completed.
+22:40:34 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+22:40:35 INFO  : 'after 3000' command is executed.
+22:40:35 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:35 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+22:40:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+22:40:35 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:35 INFO  : 'con' command is executed.
+22:40:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:40:35 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+22:40:48 INFO  : Disconnected from the channel tcfchan#6.
+22:40:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:40:49 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+22:40:49 INFO  : 'jtag frequency' command is executed.
+22:40:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+22:40:51 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+22:40:51 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:51 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+22:40:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:40:51 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:51 INFO  : System reset is completed.
+22:40:54 INFO  : 'after 3000' command is executed.
+22:40:54 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:54 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+22:40:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+22:40:54 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:54 INFO  : 'con' command is executed.
+22:40:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:40:54 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+22:45:13 INFO  : plnx-install-location is set to ''
+22:50:45 INFO  : Result from executing command 'getProjects': mb_basic_io
+22:50:45 INFO  : Result from executing command 'getPlatforms': mb_basic_io|E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/mb_basic_io.xpfm
+22:50:45 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+22:50:55 INFO  : Disconnected from the channel tcfchan#7.
+22:50:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:50:55 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+22:50:55 INFO  : 'jtag frequency' command is executed.
+22:50:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+22:50:57 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+22:50:57 INFO  : Context for processor 'microblaze_0' is selected.
+22:50:57 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+22:50:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:50:57 INFO  : Context for processor 'microblaze_0' is selected.
+22:50:57 INFO  : System reset is completed.
+22:51:00 INFO  : 'after 3000' command is executed.
+22:51:00 INFO  : Context for processor 'microblaze_0' is selected.
+22:51:00 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+22:51:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+22:51:00 INFO  : Context for processor 'microblaze_0' is selected.
+22:51:00 INFO  : 'con' command is executed.
+22:51:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:51:00 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+22:54:01 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+22:54:07 INFO  : Disconnected from the channel tcfchan#9.
+22:54:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:07 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+22:54:07 INFO  : 'jtag frequency' command is executed.
+22:54:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+22:54:09 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+22:54:09 INFO  : Context for processor 'microblaze_0' is selected.
+22:54:09 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+22:54:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:54:09 INFO  : Context for processor 'microblaze_0' is selected.
+22:54:09 INFO  : System reset is completed.
+22:54:12 INFO  : 'after 3000' command is executed.
+22:54:12 INFO  : Context for processor 'microblaze_0' is selected.
+22:54:12 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+22:54:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+22:54:12 INFO  : Context for processor 'microblaze_0' is selected.
+22:54:12 INFO  : 'con' command is executed.
+22:54:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:54:12 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:03:32 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:03:38 INFO  : Disconnected from the channel tcfchan#10.
+23:03:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:03:38 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:03:38 INFO  : 'jtag frequency' command is executed.
+23:03:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:03:40 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:03:40 INFO  : Context for processor 'microblaze_0' is selected.
+23:03:41 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:03:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:03:41 INFO  : Context for processor 'microblaze_0' is selected.
+23:03:41 INFO  : System reset is completed.
+23:03:44 INFO  : 'after 3000' command is executed.
+23:03:44 INFO  : Context for processor 'microblaze_0' is selected.
+23:03:44 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:03:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:03:44 INFO  : Context for processor 'microblaze_0' is selected.
+23:03:44 INFO  : 'con' command is executed.
+23:03:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:03:44 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:06:40 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:06:45 INFO  : Disconnected from the channel tcfchan#11.
+23:06:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:45 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:06:45 INFO  : 'jtag frequency' command is executed.
+23:06:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:06:47 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:06:47 INFO  : Context for processor 'microblaze_0' is selected.
+23:06:47 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:06:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:06:47 INFO  : Context for processor 'microblaze_0' is selected.
+23:06:47 INFO  : System reset is completed.
+23:06:50 INFO  : 'after 3000' command is executed.
+23:06:51 INFO  : Context for processor 'microblaze_0' is selected.
+23:06:51 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:06:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:06:51 INFO  : Context for processor 'microblaze_0' is selected.
+23:06:51 INFO  : 'con' command is executed.
+23:06:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:06:51 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:09:54 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:09:59 INFO  : Disconnected from the channel tcfchan#12.
+23:09:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:09:59 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:09:59 INFO  : 'jtag frequency' command is executed.
+23:09:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:10:01 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:10:01 INFO  : Context for processor 'microblaze_0' is selected.
+23:10:01 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:10:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:10:01 INFO  : Context for processor 'microblaze_0' is selected.
+23:10:01 INFO  : System reset is completed.
+23:10:04 INFO  : 'after 3000' command is executed.
+23:10:04 INFO  : Context for processor 'microblaze_0' is selected.
+23:10:04 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:10:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:10:04 INFO  : Context for processor 'microblaze_0' is selected.
+23:10:04 INFO  : 'con' command is executed.
+23:10:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:10:04 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:13:37 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:13:42 INFO  : Disconnected from the channel tcfchan#13.
+23:13:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:13:42 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:13:42 INFO  : 'jtag frequency' command is executed.
+23:13:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:13:44 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:13:45 INFO  : Context for processor 'microblaze_0' is selected.
+23:13:45 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:13:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:13:45 INFO  : Context for processor 'microblaze_0' is selected.
+23:13:45 INFO  : System reset is completed.
+23:13:48 INFO  : 'after 3000' command is executed.
+23:13:48 INFO  : Context for processor 'microblaze_0' is selected.
+23:13:48 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:13:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:13:48 INFO  : Context for processor 'microblaze_0' is selected.
+23:13:48 INFO  : 'con' command is executed.
+23:13:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:13:48 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:24:08 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:24:15 INFO  : Disconnected from the channel tcfchan#14.
+23:24:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:24:15 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:24:15 INFO  : 'jtag frequency' command is executed.
+23:24:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:24:17 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:24:17 INFO  : Context for processor 'microblaze_0' is selected.
+23:24:18 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:24:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:24:18 INFO  : Context for processor 'microblaze_0' is selected.
+23:24:18 INFO  : System reset is completed.
+23:24:21 INFO  : 'after 3000' command is executed.
+23:24:21 INFO  : Context for processor 'microblaze_0' is selected.
+23:24:21 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:24:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:24:21 INFO  : Context for processor 'microblaze_0' is selected.
+23:24:21 INFO  : 'con' command is executed.
+23:24:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:24:21 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:26:11 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:26:16 INFO  : Disconnected from the channel tcfchan#15.
+23:26:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:26:17 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:26:17 INFO  : 'jtag frequency' command is executed.
+23:26:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:26:19 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:26:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:19 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:26:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:26:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:19 INFO  : System reset is completed.
+23:26:22 INFO  : 'after 3000' command is executed.
+23:26:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:22 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:26:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:26:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:26:22 INFO  : 'con' command is executed.
+23:26:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:26:22 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:27:27 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:27:33 INFO  : Disconnected from the channel tcfchan#16.
+23:27:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:27:33 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:27:33 INFO  : 'jtag frequency' command is executed.
+23:27:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:27:35 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:27:35 INFO  : Context for processor 'microblaze_0' is selected.
+23:27:35 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:27:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:27:35 INFO  : Context for processor 'microblaze_0' is selected.
+23:27:35 INFO  : System reset is completed.
+23:27:38 INFO  : 'after 3000' command is executed.
+23:27:38 INFO  : Context for processor 'microblaze_0' is selected.
+23:27:39 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:27:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:27:39 INFO  : Context for processor 'microblaze_0' is selected.
+23:27:39 INFO  : 'con' command is executed.
+23:27:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:27:39 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:27:54 INFO  : Result from executing command 'removePlatformRepo': 
+23:28:02 INFO  : Result from executing command 'getProjects': mb_basic_io
+23:28:02 INFO  : Result from executing command 'getPlatforms': 
+23:28:02 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:28:10 INFO  : Disconnected from the channel tcfchan#17.
+23:28:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:28:10 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:28:10 INFO  : 'jtag frequency' command is executed.
+23:28:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:28:12 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:28:12 INFO  : Context for processor 'microblaze_0' is selected.
+23:28:12 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:28:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:28:12 INFO  : Context for processor 'microblaze_0' is selected.
+23:28:12 INFO  : System reset is completed.
+23:28:15 INFO  : 'after 3000' command is executed.
+23:28:15 INFO  : Context for processor 'microblaze_0' is selected.
+23:28:15 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:28:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:28:16 INFO  : Context for processor 'microblaze_0' is selected.
+23:28:16 INFO  : 'con' command is executed.
+23:28:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:28:16 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:32:40 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:32:45 INFO  : Disconnected from the channel tcfchan#20.
+23:32:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:32:45 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:32:45 INFO  : 'jtag frequency' command is executed.
+23:32:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:32:48 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:32:48 INFO  : Context for processor 'microblaze_0' is selected.
+23:32:48 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:32:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:32:48 INFO  : Context for processor 'microblaze_0' is selected.
+23:32:48 INFO  : System reset is completed.
+23:32:51 INFO  : 'after 3000' command is executed.
+23:32:51 INFO  : Context for processor 'microblaze_0' is selected.
+23:32:51 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:32:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:32:51 INFO  : Context for processor 'microblaze_0' is selected.
+23:32:51 INFO  : 'con' command is executed.
+23:32:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:32:51 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:34:09 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:34:16 INFO  : Disconnected from the channel tcfchan#21.
+23:34:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:34:16 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:34:16 INFO  : 'jtag frequency' command is executed.
+23:34:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:34:19 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:34:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:19 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:34:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:34:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:19 INFO  : System reset is completed.
+23:34:22 INFO  : 'after 3000' command is executed.
+23:34:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:22 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:34:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:34:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:34:22 INFO  : 'con' command is executed.
+23:34:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:34:22 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:37:43 INFO  : Bit file 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit' is generated.
+23:37:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:37:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:37:45 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:39:56 INFO  : Bit file 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit' is generated.
+23:39:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:39:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292744729A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292744729A-13631093-0"}' command is executed.
+23:39:58 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:40:53 INFO  : Disconnected from the channel tcfchan#22.
+23:40:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:40:53 INFO  : Jtag cable 'Digilent Nexys4DDR 210292744729A' is selected.
+23:40:53 INFO  : 'jtag frequency' command is executed.
+23:40:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292744729A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292744729A-13631093-0"}' command is executed.
+23:40:55 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:40:55 INFO  : Context for processor 'microblaze_0' is selected.
+23:40:55 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:40:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:40:55 INFO  : Context for processor 'microblaze_0' is selected.
+23:40:55 INFO  : System reset is completed.
+23:40:58 INFO  : 'after 3000' command is executed.
+23:40:58 INFO  : Context for processor 'microblaze_0' is selected.
+23:40:58 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:40:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292744729A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292744729A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:40:58 INFO  : Context for processor 'microblaze_0' is selected.
+23:40:59 INFO  : 'con' command is executed.
+23:40:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:40:59 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:42:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:43:17 INFO  : Disconnected from the channel tcfchan#23.
+23:43:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:43:18 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:43:18 INFO  : 'jtag frequency' command is executed.
+23:43:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:43:20 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:43:20 INFO  : Context for processor 'microblaze_0' is selected.
+23:43:20 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:43:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:43:20 INFO  : Context for processor 'microblaze_0' is selected.
+23:43:20 INFO  : System reset is completed.
+23:43:23 INFO  : 'after 3000' command is executed.
+23:43:23 INFO  : Context for processor 'microblaze_0' is selected.
+23:43:23 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:43:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:43:23 INFO  : Context for processor 'microblaze_0' is selected.
+23:43:23 INFO  : 'con' command is executed.
+23:43:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:43:23 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:43:37 INFO  : Disconnected from the channel tcfchan#24.
+23:43:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:43:37 INFO  : Jtag cable 'Digilent Nexys4DDR 210292744729A' is selected.
+23:43:37 INFO  : 'jtag frequency' command is executed.
+23:43:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292744729A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292744729A-13631093-0"}' command is executed.
+23:43:40 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:43:40 ERROR : more than one targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ":
+        3  MicroBlaze #0 (Running)
+        7  MicroBlaze #0 (Running)
+23:43:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292744729A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292744729A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+----------------End of Script----------------
+
+23:43:40 ERROR : more than one targets found with "name =~ "*microblaze*#0" && bscan=="USER2" ":
+        3  MicroBlaze #0 (Running)
+        7  MicroBlaze #0 (Running)
+23:44:17 INFO  : Bit file 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit' is generated.
+23:44:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:44:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292744729A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292744729A-13631093-0"}' command is executed.
+23:44:19 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:53:39 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:53:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:54:04 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:54:04 INFO  : 'jtag frequency' command is executed.
+23:54:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:54:10 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:54:10 INFO  : Context for processor 'microblaze_0' is selected.
+23:54:10 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:54:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:54:10 INFO  : Context for processor 'microblaze_0' is selected.
+23:54:10 INFO  : System reset is completed.
+23:54:13 INFO  : 'after 3000' command is executed.
+23:54:13 INFO  : Context for processor 'microblaze_0' is selected.
+23:54:13 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:54:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:54:13 INFO  : Context for processor 'microblaze_0' is selected.
+23:54:13 INFO  : 'con' command is executed.
+23:54:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:54:13 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+23:57:09 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+23:57:16 INFO  : Disconnected from the channel tcfchan#25.
+23:57:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:57:16 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+23:57:16 INFO  : 'jtag frequency' command is executed.
+23:57:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+23:57:19 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+23:57:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:57:19 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+23:57:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:57:19 INFO  : Context for processor 'microblaze_0' is selected.
+23:57:19 INFO  : System reset is completed.
+23:57:22 INFO  : 'after 3000' command is executed.
+23:57:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:57:22 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+23:57:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+23:57:22 INFO  : Context for processor 'microblaze_0' is selected.
+23:57:22 INFO  : 'con' command is executed.
+23:57:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+23:57:22 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:01:39 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:01:46 INFO  : Disconnected from the channel tcfchan#26.
+00:01:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:01:46 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:01:46 INFO  : 'jtag frequency' command is executed.
+00:01:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:01:48 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+00:01:48 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:01:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+00:01:48 INFO  : System reset is completed.
+00:01:51 INFO  : 'after 3000' command is executed.
+00:01:51 INFO  : Context for processor 'microblaze_0' is selected.
+00:01:51 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:01:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:01:51 INFO  : Context for processor 'microblaze_0' is selected.
+00:01:51 INFO  : 'con' command is executed.
+00:01:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:01:51 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:03:25 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:03:29 INFO  : Disconnected from the channel tcfchan#27.
+00:03:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:03:30 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:03:30 INFO  : 'jtag frequency' command is executed.
+00:03:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:03:32 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:03:32 INFO  : Context for processor 'microblaze_0' is selected.
+00:03:32 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:03:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:03:32 INFO  : Context for processor 'microblaze_0' is selected.
+00:03:32 INFO  : System reset is completed.
+00:03:35 INFO  : 'after 3000' command is executed.
+00:03:35 INFO  : Context for processor 'microblaze_0' is selected.
+00:03:35 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:03:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:03:35 INFO  : Context for processor 'microblaze_0' is selected.
+00:03:35 INFO  : 'con' command is executed.
+00:03:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:03:35 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:04:43 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:04:49 INFO  : Disconnected from the channel tcfchan#28.
+00:04:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:04:50 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:04:50 INFO  : 'jtag frequency' command is executed.
+00:04:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:04:52 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:04:52 INFO  : Context for processor 'microblaze_0' is selected.
+00:04:52 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:04:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:04:52 INFO  : Context for processor 'microblaze_0' is selected.
+00:04:52 INFO  : System reset is completed.
+00:04:55 INFO  : 'after 3000' command is executed.
+00:04:55 INFO  : Context for processor 'microblaze_0' is selected.
+00:04:55 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:04:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:04:55 INFO  : Context for processor 'microblaze_0' is selected.
+00:04:55 INFO  : 'con' command is executed.
+00:04:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:04:55 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:11:14 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:11:25 INFO  : Disconnected from the channel tcfchan#29.
+00:11:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:11:25 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:11:25 INFO  : 'jtag frequency' command is executed.
+00:11:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:11:27 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:11:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:27 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:11:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:11:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:28 INFO  : System reset is completed.
+00:11:31 INFO  : 'after 3000' command is executed.
+00:11:31 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:31 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:11:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:11:31 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:31 INFO  : 'con' command is executed.
+00:11:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:11:31 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:12:07 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:12:15 INFO  : Disconnected from the channel tcfchan#30.
+00:12:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:12:15 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:12:15 INFO  : 'jtag frequency' command is executed.
+00:12:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:12:18 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:12:18 INFO  : Context for processor 'microblaze_0' is selected.
+00:12:18 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:12:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:12:18 INFO  : Context for processor 'microblaze_0' is selected.
+00:12:18 INFO  : System reset is completed.
+00:12:21 INFO  : 'after 3000' command is executed.
+00:12:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:12:21 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:12:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:12:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:12:21 INFO  : 'con' command is executed.
+00:12:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:12:21 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:13:39 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:13:55 INFO  : Disconnected from the channel tcfchan#31.
+00:13:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:13:56 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:13:56 INFO  : 'jtag frequency' command is executed.
+00:13:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:13:58 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:13:58 INFO  : Context for processor 'microblaze_0' is selected.
+00:13:58 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:13:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:13:58 INFO  : Context for processor 'microblaze_0' is selected.
+00:13:58 INFO  : System reset is completed.
+00:14:01 INFO  : 'after 3000' command is executed.
+00:14:01 INFO  : Context for processor 'microblaze_0' is selected.
+00:14:01 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:14:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:14:01 INFO  : Context for processor 'microblaze_0' is selected.
+00:14:01 INFO  : 'con' command is executed.
+00:14:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:14:01 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:24:43 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:25:17 INFO  : Disconnected from the channel tcfchan#32.
+00:25:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:25:17 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:25:17 INFO  : 'jtag frequency' command is executed.
+00:25:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:25:20 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:25:20 INFO  : Context for processor 'microblaze_0' is selected.
+00:25:20 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:25:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:25:20 INFO  : Context for processor 'microblaze_0' is selected.
+00:25:20 INFO  : System reset is completed.
+00:25:23 INFO  : 'after 3000' command is executed.
+00:25:23 INFO  : Context for processor 'microblaze_0' is selected.
+00:25:23 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:25:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:25:23 INFO  : Context for processor 'microblaze_0' is selected.
+00:25:23 INFO  : 'con' command is executed.
+00:25:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:25:23 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:27:26 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:27:31 INFO  : Disconnected from the channel tcfchan#33.
+00:27:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:27:31 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:27:31 INFO  : 'jtag frequency' command is executed.
+00:27:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:27:33 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:27:34 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:34 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:27:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:27:34 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:34 INFO  : System reset is completed.
+00:27:37 INFO  : 'after 3000' command is executed.
+00:27:37 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:37 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:27:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:27:37 INFO  : Context for processor 'microblaze_0' is selected.
+00:27:37 INFO  : 'con' command is executed.
+00:27:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:27:37 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:36:21 INFO  : Checking for BSP changes to sync application flags for project 'serial_IO'...
+00:36:26 INFO  : Disconnected from the channel tcfchan#34.
+00:36:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:36:26 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A4BE34A' is selected.
+00:36:26 INFO  : 'jtag frequency' command is executed.
+00:36:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}' command is executed.
+00:36:28 INFO  : Device configured successfully with "E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit"
+00:36:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:36:28 INFO  : Hardware design and registers information is loaded from 'E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa'.
+00:36:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:36:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:36:28 INFO  : System reset is completed.
+00:36:31 INFO  : 'after 3000' command is executed.
+00:36:31 INFO  : Context for processor 'microblaze_0' is selected.
+00:36:31 INFO  : The application 'E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf' is downloaded to processor 'microblaze_0'.
+00:36:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A4BE34A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A4BE34A-13631093-0"}
+fpga -file E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/_ide/bitstream/download.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw E:/XilinxProject/IO_exp/IO_exp2.sw/mb_basic_io/export/mb_basic_io/hw/design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow E:/XilinxProject/IO_exp/IO_exp2.sw/serial_IO/Debug/serial_IO.elf
+----------------End of Script----------------
+
+00:36:31 INFO  : Context for processor 'microblaze_0' is selected.
+00:36:31 INFO  : 'con' command is executed.
+00:36:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:36:31 INFO  : Launch script is exported to file 'E:\XilinxProject\IO_exp\IO_exp2.sw\serial_IO_system\_ide\scripts\systemdebugger_serial_io_system_standalone.tcl'
+00:37:57 INFO  : Result from executing command 'removePlatformRepo': 
+00:38:08 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
+00:38:32 ERROR : Error from executing command 'removePlatformRepo': ERROR: No valid directory exists at given path.
