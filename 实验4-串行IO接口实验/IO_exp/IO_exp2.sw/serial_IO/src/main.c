@@ -47,6 +47,23 @@ u8 button_rev = 0;  //按键状态
 volatile u8 uart2_rx_state = 0;   // 0=等待低字节, 1=等待高字节
 volatile u8 uart2_rx_low = 0;     // 暂存低字节
 
+// 打印标志和数据缓冲 (ISR 写入, 主循环读出并清除)
+volatile int flag_btn       = 0;    // 按钮中断触发
+volatile u8  flag_btn_val   = 0;    // 按钮编号
+volatile int flag_switch    = 0;    // 开关中断触发
+volatile u16 flag_switch_val = 0;   // 开关值
+volatile int flag_isr_debug  = 0;   // ISR 调试状态触发
+volatile int flag_isr_val    = 0;   // ISR 状态寄存器值
+volatile u8 flag_sent_low   = 0;   // 发送低字节触发
+volatile u8 flag_sent_low_val = 0; // 发送的低字节
+volatile u8 flag_sent_high  = 0;   // 发送高字节触发
+volatile u8 flag_sent_high_val = 0; // 发送的高字节
+volatile u8 flag_uart1_intr = 0; // UART1 中断触发
+volatile u8 flag_uart2_intr = 0; // UART2 中断触发
+volatile u8 flag_uart1_rev  = 0; // UART1 接收触发
+volatile u8 flag_uart1_rev_val = 0; // UART1 接收的按键值
+volatile u8 flag_uart2_rev  = 0; // UART2 接收触发
+volatile u16 flag_uart2_rev_val = 0; // UART2 接收的开关值
 
 int init(){
     Xil_Out16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_TRI_OFFSET, 0xffff);   //配置GPIO0 ch1(开关)为输入
@@ -81,18 +98,59 @@ int init(){
     return 0;
 }
 
-
 int main(){
     init();
     while(1){
+        // 按钮中断打印
+        if (flag_btn) {
+            xil_printf("Button Interrupt! button: %d\r\n", flag_btn_val);
+            flag_btn = 0;
+        }
+        // 开关中断打印
+        if (flag_switch) {
+            xil_printf("Switch Interrupt! Switch state: %x\r\n", flag_switch_val);
+            flag_switch = 0;
+        }
+        // 调试：非定时器的 ISR 状态打印
+        if (flag_isr_debug) {
+            xil_printf("ISR status: %x\r\n", flag_isr_val);
+            flag_isr_debug = 0;
+        }
+        if (flag_sent_low) {
+            xil_printf("Sent low byte: %x\r\n", flag_sent_low_val);
+            flag_sent_low = 0;
+        }
+        if (flag_sent_high) {
+            xil_printf("Sent high byte: %x\r\n", flag_sent_high_val);
+            flag_sent_high = 0;
+        }
+        if (flag_uart1_intr) {
+            xil_printf("UART1 Interrupt!\r\n");
+            flag_uart1_intr = 0;
+        }
+        if (flag_uart2_intr) {
+            xil_printf("UART2 Interrupt!\r\n");
+            flag_uart2_intr = 0;
+        }
+        if (flag_uart1_rev) {
+            xil_printf("UART1 Received button: %d\r\n", flag_uart1_rev_val);
+            flag_uart1_rev = 0;
+        }
+        if (flag_uart2_rev) {
+            xil_printf("UART2 Received switch: %x\r\n", flag_uart2_rev_val);
+            flag_uart2_rev = 0;
+        }
     }
     return 0;
 }
 
 void My_ISR(void) {
     u32 status = Xil_In32(intc_ISR);
-    // xil_printf("ISR status: %x\r\n", status);
-    if(status!=4) xil_printf("ISR status: %x\r\n", status);
+    
+    if (status != XPAR_AXI_TIMER_0_INTERRUPT_MASK) {
+        flag_isr_val   = status;
+        flag_isr_debug = 1;
+    }
     
     if(((status & XPAR_AXI_UARTLITE_2_INTERRUPT_MASK)==XPAR_AXI_UARTLITE_2_INTERRUPT_MASK)) {  //uart2中断
         UART2_Handler();
@@ -117,44 +175,36 @@ void PushBtnHandler(){
     u8 button;
     switch (Xil_In8((XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET)))
         {
-        case 1:
-            button = 1;
-            break;
-        case 2:
-            button = 2;
-            break;
-        case 4:
-            button = 3;
-            break;
-        case 16:
-            button = 4;
-            break;
-        case 8:
-            button = 5;
-            break;
-        default:
-            button = 0;
-            break;
+        case 1:button = 1;break;
+        case 2:button = 2;break;
+        case 4:button = 3;break;
+        case 16:button = 4;break;
+        case 8:button = 5;break;
+        default:button = 0;break;
         }
         if((Xil_In32(uart2_STATUS)&XUL_SR_TX_FIFO_EMPTY)==XUL_SR_TX_FIFO_EMPTY){
             Xil_Out8(uart2_TX_FIFO, button);  //将按键状态通过uart2发送出去
         }
-        xil_printf("Button Interrupt!button: %d\r\n", button);
+    flag_btn_val = button;
+    flag_btn     = 1;
     Xil_Out32(Btn_ISR, Xil_In32(Btn_ISR));  //清除GPIO2中断
 }
 
 void SwitchHandler(){
-    u32 sw = Xil_In16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA_OFFSET);  //读取开关状态
-    xil_printf("Switch Interrupt!Switch state: %x\r\n", sw);
+    u16 sw = Xil_In16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA_OFFSET);  //读取开关状态 
+    flag_switch_val = sw;
+    flag_switch     = 1;
+
     /*注意！uart一次只能发送八位，而开关有16个——分两次发送，中间等待FIFO空*/
     if((Xil_In32(uart1_STATUS)&XUL_SR_TX_FIFO_EMPTY)==XUL_SR_TX_FIFO_EMPTY) {  //uart1发送FIFO为空
         Xil_Out8(uart1_TX_FIFO, sw & 0xff);            //发送低八位
-        xil_printf("Switch Interrupt! Sent lower byte: %x\r\n", sw & 0xff);
+        flag_sent_low_val = sw & 0xff;
+        flag_sent_low = 1;
         while(!(Xil_In32(uart1_STATUS) & XUL_SR_TX_FIFO_EMPTY));  //等待FIFO空
         Xil_Out8(uart1_TX_FIFO, (sw >> 8) & 0xff);     //发送高八位
-        xil_printf("Switch Interrupt! Sent higher byte: %x\r\n", (sw >> 8) & 0xff);
+        flag_sent_high_val = (sw >> 8) & 0xff;
+        flag_sent_high = 1;
     }
-
     Xil_Out32(Switch_ISR, Xil_In32(Switch_ISR));  //清除GPIO0中断
 }
 
@@ -174,10 +224,12 @@ void seg7_TimerHandler(){
 
 void UART1_Handler(){
     u32 status = Xil_In32(uart1_STATUS);
-    xil_printf("UART1 Interrupt! Status: %x\r\n", status);
+    flag_uart1_intr = 1;
+    
     if(status&XUL_SR_RX_FIFO_VALID_DATA) {  //接收FIFO非空
         u8 data = (u8)Xil_In32(uart1_RX_FIFO);  //读取接收到的按键值
-        xil_printf("UART1 Received button: %d\r\n", data);
+        flag_uart1_rev_val = data;
+        flag_uart1_rev = 1;
         button_rev = data & 0x7;                 //用低3位更新数码管方向
     }
     Xil_Out32(uart1_REG, 0x13);
@@ -185,6 +237,7 @@ void UART1_Handler(){
 
 void UART2_Handler(){
     //用while在一次中断中读完
+    flag_uart2_intr = 1;
     while(Xil_In32(uart2_STATUS) & XUL_SR_RX_FIFO_VALID_DATA) {
         u8 data = (u8)Xil_In32(uart2_RX_FIFO);
         if(uart2_rx_state == 0) {                //收到低字节
@@ -192,7 +245,8 @@ void UART2_Handler(){
             uart2_rx_state = 1;                  //等待高字节
         } else {                                 //收到高字节，拼装完整16位开关值
             u16 sw = uart2_rx_low | ((u16)data << 8);
-            xil_printf("UART2 Switch: %x\r\n", sw);
+            flag_uart2_rev = 1;
+            flag_uart2_rev_val = sw;
             Xil_Out16(XPAR_AXI_GPIO_0_BASEADDR+XGPIO_DATA2_OFFSET, sw);
             uart2_rx_state = 0;
         }

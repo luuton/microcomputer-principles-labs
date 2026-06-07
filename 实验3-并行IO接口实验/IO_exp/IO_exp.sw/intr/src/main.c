@@ -110,7 +110,6 @@ void My_ISR(void) {
 }
 
 void PushBtnHandler(){
-    u8 btn_val;
     switch (Xil_In32(XPAR_AXI_GPIO_2_BASEADDR+XGPIO_DATA_OFFSET) & 0x1F)
         {
         case 1:button = 1;break;
