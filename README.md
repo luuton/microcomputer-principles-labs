@@ -155,7 +155,7 @@
 
 1. 找不到 `vivado.bat`
 - 说明 Vivado 未加入系统 PATH。
-- 解决：使用 Vivado Tcl Shell 执行 `source create_prj.tcl`，或将 Vivado `bin` 目录加入 PATH。
+- 解决：使用 Vivado Tcl Console 执行 `source create_prj.tcl`，或将 Vivado `bin` 目录加入 PATH。
 
 2. Tcl 重建工程时报缺失 IP
 - 先确认本机已安装对应 Xilinx IP Catalog 与板卡文件（Nexys4 DDR board files）。
