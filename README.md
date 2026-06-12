@@ -13,40 +13,53 @@
 
 ```text
 实验1-MIPS汇编程序设计/
-  mips1.asm
-  mips1.c
-  task1.asm
-  test1.txt
+├── mips1.asm          # MIPS汇编程序1
+├── mips1.c            # C参考实现
+├── task1.asm          # 任务1汇编代码
+└── test1.txt          # 导出的机器码
 
 实验2-类MIPS单周期微处理器设计/
-  mips1.asm
-  mips2.asm
-  test.txt
-  MIPS_cpu/
-    create_project.bat
-    create_prj.tcl
-    MIPS_cpu.srcs/
-      sources_1/new/*.v
-      sim_1/new/tb_*.v
+├── mips1.asm          # 测试程序1
+├── mips2.asm          # 测试程序2
+├── test.txt           # 导出的机器码
+└── MIPS_cpu/          # 微处理器设计
+    ├── create_project.bat    # Windows项目创建脚本
+    ├── create_prj.tcl        # Vivado重建脚本
+    └── MIPS_cpu.srcs/
+        ├── sources_1/new/    # RTL源码
+        │   ├── pc.v
+        │   ├── alu.v
+        │   ├── regfile.v
+        │   ├── controller.v
+        │   └── ...
+        └── sim_1/new/        # 仿真文件
+            ├── tb_cpu.v
+            └── ...
 
 实验3-并行IO接口实验/
-  快速中断.c
-  IO_exp/
-    create_project.bat
-    create_prj.tcl
-    IO_exp.srcs/
-    IO_exp.sw/
-      demo/
-      intr/
+├── 快速中断.c          # 快速中断方式代码
+└── IO_exp/            # Vivado硬件工程
+    ├── create_project.bat
+    ├── create_prj.tcl
+    ├── IO_exp.srcs/           # 硬件源码
+    │   ├── constrs_1/         # 约束文件
+    │   └── sources_1/         # RTL设计
+    └── IO_exp.sw/             # 软件工程
+        ├── demo/              # 扫描实现
+        │   └── src/
+        │       └── demo.c
+        └── intr/              # 中断实现
+            └── src/
+                └── main.c
 
 实验4-串行IO接口实验/
-  IO_exp/
-    create_project.bat
-    create_prj.tcl
-    IO_exp/
-      IO_exp.srcs/
-      IO_exp2.sw/
-        serial_IO/
+└── IO_exp/            # Vivado硬件工程
+    ├── create_project.bat
+    ├── create_prj.tcl
+    ├── IO_exp.srcs/           # 硬件源码
+    └── IO_exp2.sw/            # 软件工程
+        └── serial_IO/
+            └── main.c         # 源码
 ```
 
 ## 2. 开发环境
@@ -154,20 +167,24 @@
 ## 4. 常见问题
 
 1. 找不到 `vivado.bat`
-- 说明 Vivado 未加入系统 PATH。
-- 解决：使用 Vivado Tcl Console 执行 `source create_prj.tcl`，或将 Vivado `bin` 目录加入 PATH。
+   - 说明 Vivado 未加入系统环境变量。
+   - 解决：使用 Vivado Tcl Console 执行 `source create_prj.tcl`，或将 Vivado `bin` 目录加入系统环境变量。
 
 2. Tcl 重建工程时报缺失 IP
-- 先确认本机已安装对应 Xilinx IP Catalog 与板卡文件（Nexys4 DDR board files）。
+   - 先确认本机已安装对应 Xilinx IP Catalog 与板卡文件（Nexys4 DDR board files）。
+   - 报错`ERROR: [Board 49-71] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1.`
+      1. 请检查你的`nexys4 ddr`板卡文件路径是否为`%APPDATA%\Xilinx\Vivado\2021.2\xhub\board_store\xilinx_board_store\XilinxBoardStore\Vivado\2021.2\boards\Digilent`
+      2. 若没有请访问[Digilent/nexys4_ddr](https://github.com/Digilent/vivado-boards/tree/master/new/board_files/nexys4_ddr/C.1)下载板卡文件并放置到上述路径的`.\nexys4_ddr/C.1`文件夹下
+      3. 如果你已经导入过板卡文件且记得在哪，可以打开`create_prj.tcl`脚本，查找`board_part_repo_paths`，将那条`set_property`命令的`-value`后的路径直接替换为你的板卡路径，**用双引号包裹路径、反斜杠改'\'为斜杠'/'、最后面的反斜杠'\'不要删**
+      4. 删除生成的`IO_exp/`等文件/文件夹，再次运行`create_project.bat`批处理命令
 
 3. 软件工程无法编译
-- 检查硬件平台（XSA）与 BSP 是否重新生成并关联。
-- 清理并全量重编译工程。
+   - 检查硬件平台（XSA）与 BSP 是否重新生成并关联。
+   - 清理并重编译工程。
 
 4. 中断打印异常或无输出
-- 检查串口波特率、COM 口、下载的 bitstream 与 elf 是否匹配。
-- 检查中断使能顺序：外设使能 -> INTC 使能 -> CPU 全局中断使能。
-
+   - 检查串口波特率、COM 口、下载的 bitstream 与 elf 是否匹配。
+   - 检查中断使能顺序：外设使能 -> INTC 使能 -> CPU 全局中断使能。
 
 ## 5. 说明
 

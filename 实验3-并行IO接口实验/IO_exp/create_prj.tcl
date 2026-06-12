@@ -132,7 +132,9 @@ set proj_dir [get_property directory [current_project]]
 
 # Set project properties
 set obj [current_project]
-set_property -name "board_part_repo_paths" -value "C:/Users/yv236/AppData/Roaming/Xilinx/Vivado/2021.2/xhub/board_store/xilinx_board_store" -objects $obj
+set_property -name "board_part_repo_paths" \
+  -value [file join $::env(USERPROFILE) "AppData/Roaming/Xilinx/Vivado" [version -short] "xhub/board_store/xilinx_board_store"] \
+  -objects $obj
 set_property -name "board_part" -value "digilentinc.com:nexys4_ddr:part0:1.1" -objects $obj
 set_property -name "compxlib.modelsim_compiled_library_dir" -value "D:/modelsim/Lib" -objects $obj
 set_property -name "default_lib" -value "xil_defaultlib" -objects $obj
